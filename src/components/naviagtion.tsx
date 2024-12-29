@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Naviagtion = () => {
-  return (
-    <div>
-     Naviagtion 
-    </div>
-  )
-}
+  return <div>Naviagtion</div>;
+};
 
-export default Naviagtion
+export default Naviagtion;
