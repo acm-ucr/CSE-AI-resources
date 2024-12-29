@@ -1,4 +1,4 @@
-# ACM UCR Website Template
+# CSE AI Resource Website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23407ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -11,7 +11,7 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/)
+[CSE AI Resource Figma Design File](https://www.figma.com/design/qdagE2pkGk4J7vyuHdVHcx/CSE-AI-WEBSITE?node-id=0-1&p=f&t=D1zYyVOe02EqIt82-0)
 
 ## Node.js
 
