@@ -1,4 +1,4 @@
-name: ACM UCR Website
+name: CSE AI Resource Website
 on:
   pull_request:
     branches: [main, dev]
