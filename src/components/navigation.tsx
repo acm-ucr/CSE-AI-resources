@@ -12,17 +12,17 @@ type Item = {
 const Navigation = () => {
   return (
     <div className="flex-col bg-ucr-blue text-white">
-      <p className="bg-ucr-yellow p-3 text-center text-lg text-black font-light">
+      <p className="bg-ucr-yellow p-3 text-center text-lg font-light text-black">
         University of California, Riverside
       </p>
 
-      <div className="flex justify-between h-24">
-        <div className=" flex pl-4 text-4xl font-medium items-center space-x-3">
+      <div className="flex h-24 justify-between">
+        <div className="flex items-center space-x-3 pl-4 text-4xl font-medium">
           <Image src={Logo} alt="UCR Logo"></Image>
-          <p className="text-ucr-yellow text-5xl font-extralight pr-4">|</p> 
+          <p className="pr-4 text-5xl font-extralight text-ucr-yellow">|</p>
           CSE AI
         </div>
-        <div className=" flex space-x-7 pr-4 text-2xl items-center">
+        <div className="flex items-center space-x-7 pr-4 text-2xl">
           {items.map((item: Item) => (
             <Link href={item.href}> {item.name} </Link>
           ))}
