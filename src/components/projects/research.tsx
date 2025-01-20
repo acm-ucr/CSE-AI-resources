@@ -14,7 +14,7 @@ const research = () => {
         <div className="h-1 bg-[#FFB81C]"></div>
       </div>
 
-      <p className="font-inter mb-16 max-w-[1260px] text-[25px] font-normal leading-[30.26px]">
+      <p className="font-inter mb-16 max-w-[1260px] text-[25px] font-normal leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
