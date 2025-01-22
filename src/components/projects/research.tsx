@@ -8,7 +8,7 @@ const research = () => {
   ];
 
   return (
-    <section>
+    <div>
       <div className="mb-7 inline-block">
         <h1 className="mb-2 text-5xl">Projects & Research</h1>
         <div className="h-1 bg-[#FFB81C]"></div>
@@ -23,16 +23,18 @@ const research = () => {
 
       <div className="flex justify-around gap-20">
         {placeholderImages.map((image, index) => (
-          <div key={index} className="h-[360px] w-[360px] text-center">
-            <img
-              src={image}
-              alt="Image placeholder with blue background"
-              className="w-full"
-            />
+          <div>
+            <div key={index} className="h-image w-image text-center">
+              <img
+                src={image}
+                alt="Image placeholder with blue background"
+                className="w-full"
+              />
+            </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
