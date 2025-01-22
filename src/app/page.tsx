@@ -1,17 +1,19 @@
-import About from "@/components/about";
-import Education from "@/components/education";
-import Landing from "@/components/landing";
-import News from "@/components/news";
-import Welcome from "@/components/welcome";
+import About from "@/components/home/about";
+import Education from "@/components/home/education";
+import Landing from "@/components/home/landing";
+import News from "@/components/home/news";
+import Welcome from "@/components/home/welcome";
+import Professional from "@/components/projects/professionals";
 
 const Home = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       <Landing />
       <Welcome />
       <About />
       <Education />
       <News />
+      <Professional />
     </div>
   );
 };
