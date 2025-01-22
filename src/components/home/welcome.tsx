@@ -2,7 +2,7 @@ import React from "react";
 
 const Welcome = () => {
   return (
-    <div className="flex flex-col items-start justify-start bg-white py-16 pl-[105px] pr-[223px]">
+    <div className="flex flex-col items-start justify-start bg-white py-16 pl-[105px] pr-[130px]">
       {/* Welcome Heading */}
       <h1 className="mb-3 text-6xl text-black">Welcome</h1>
       {/* Yellow Underline */}
