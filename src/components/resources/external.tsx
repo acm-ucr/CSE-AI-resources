@@ -11,7 +11,8 @@ const external = () => {
           width: "50%",
           height: "5px",
           backgroundColor: "#FFB81C",
-          margin: "5px auto",
+          marginTop: "5px",
+          marginLeft: "0",
         }}
       ></div>
       <p style={{ fontSize: "25px", fontWeight: "400" }}>
