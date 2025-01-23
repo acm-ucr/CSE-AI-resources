@@ -1,6 +1,6 @@
 import React from "react";
 
-const research = () => {
+const Research = () => {
   const placeholderImages = [
     "https://placehold.co/360x360/00378F/00378F.png",
     "https://placehold.co/360x360/00378F/00378F.png",
@@ -38,4 +38,4 @@ const research = () => {
   );
 };
 
-export default research;
+export default Research;

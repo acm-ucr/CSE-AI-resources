@@ -3,7 +3,6 @@ import Education from "@/components/home/education";
 import Landing from "@/components/home/landing";
 import News from "@/components/home/news";
 import Welcome from "@/components/home/welcome";
-import Research from "@/components/projects/research";
 
 const Home = () => {
   return (
@@ -13,7 +12,6 @@ const Home = () => {
       <About />
       <Education />
       <News />
-      <Research />
     </div>
   );
 };

@@ -18,7 +18,9 @@ const Navigation = () => {
 
       <div className="flex h-24 justify-between">
         <div className="flex items-center space-x-3 pl-4 text-4xl font-medium">
-          <Image src={Logo} alt="UCR Logo" />
+          <Link href={"/"}>
+            <Image src={Logo} alt="UCR Logo" />
+          </Link>
           <p className="pr-4 text-5xl font-extralight text-ucr-yellow">|</p>
           CSE AI
         </div>
