@@ -7,6 +7,7 @@ module.exports = {
         ucr: {
           blue: "#003DA5",
           yellow: "#FFB81C",
+          orangeYellow: "#F5C000",
         },
       },
     },
