@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Footer from "@/components/home/footer";
-import Naviagtion from "@/components/naviagtion";
+import Naviagtion from "@/components/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
