@@ -8,7 +8,7 @@ const Landing = () => {
         <Image
           fill
           style={{ objectFit: "cover" }}
-          src="/ucr_background.png"
+          src="/ucr_background.webp"
           alt="UCR Background"
         />
       </div>
