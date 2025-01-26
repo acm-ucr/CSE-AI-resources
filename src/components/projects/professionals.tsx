@@ -1,53 +1,21 @@
 import React from "react";
 
-const Professionals = () => {
+const professionals = () => {
   return (
-    <div>
-      <h1>Engineers/Technical Professionals</h1>
-      <div className="yellow-line"></div>
-      <p>
+    <div className="font-sans top-0 left-0 ml-4 mt-4">
+    <div className="flex items-center">
+      <h1 className="text-3xl font-semibold text-left mr-2">Engineers/Technical Professionals</h1>
+      <div className="h-0.5 w-56 bg-[#ffb81c]"></div>
+    </div>
+
+  <p className="ml-0 mt-2 w-1/2 text-sm text-left leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-
-      <style>
-        {`
-              h1 {
-                font-family: "Arial", sans-serif;
-                font-size: 25px;
-                font-weight: normal;
-                padding-left: 15px;
-                display: inline-block;
-              }
-    
-              .yellow-line {
-                display: inline-block;
-                width: 115px;
-                height: 2px;
-                background-color: #ffb81c;
-                margin-left: 5px;
-                vertical-align: text-top;
-                margin-top: 5px;
-              }
-    
-              p {
-                font-family: "Arial", sans-serif;
-                font-size: 10.5px;
-                line-height: 1.4;
-                width: 33%;
-                margin-left: left;
-                margin-right: left;
-                padding: 2px;
-                padding-left: 18px;
-                text-align: left;
-                word-wrap: break-word;
-              }
-            `}
-      </style>
     </div>
   );
 };
 
-export default Professionals;
+export default professionals;
