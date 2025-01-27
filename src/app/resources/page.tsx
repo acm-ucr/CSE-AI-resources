@@ -1,7 +1,10 @@
-import React from "react";
-
+import Articles from "@/components/resources/articles";
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <Articles />
+    </div>
+  );
 };
 
 export default page;
