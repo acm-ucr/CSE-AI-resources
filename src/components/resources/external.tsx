@@ -2,10 +2,10 @@ import React from "react";
 
 const External = () => {
   return (
-    <div className="text-left mb-5">
-      <h1 className="text-6xl font-light m-0">External Resources</h1>
-      <div className="w-[543.01px] h-1 border-t-[5px] border-yellow-500 mb-4"></div>
-      <p className="text-xl font-light mt-4">
+    <div className="mb-5 text-left">
+      <h1 className="m-0 text-6xl font-light">External Resources</h1>
+      <div className="mb-4 h-1 w-[543.01px] border-t-[5px] border-yellow-500"></div>
+      <p className="mt-4 text-xl font-light">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
