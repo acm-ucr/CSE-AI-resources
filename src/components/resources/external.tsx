@@ -1,7 +1,18 @@
 import React from "react";
 
-const external = () => {
-  return <div>external</div>;
+const External = () => {
+  return (
+    <div className="text-left mb-5">
+      <h1 className="text-6xl font-light m-0">External Resources</h1>
+      <div className="w-[543.01px] h-1 border-t-[5px] border-yellow-500 mb-4"></div>
+      <p className="text-xl font-light mt-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+  );
 };
 
-export default external;
+export default External;
