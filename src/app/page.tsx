@@ -3,6 +3,7 @@ import Education from "@/components/home/education";
 import Landing from "@/components/home/landing";
 import News from "@/components/home/news";
 import Welcome from "@/components/home/welcome";
+import Notes from "@/components/resources/notes";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <About />
       <Education />
       <News />
+      <Notes />
     </div>
   );
 };
