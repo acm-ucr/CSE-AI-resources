@@ -1,16 +1,15 @@
 import React from "react";
 
-const professionals = () => {
+const Professionals = () => {
   return (
-    <div className="left-0 top-0 ml-4 mt-4 font-sans">
-      <div className="flex items-center">
-        <h1 className="mr-2 text-left text-3xl font-semibold">
+    <div className="mt-4 flex w-5/6 flex-col items-center font-sans">
+      <div className="flex w-full items-center">
+        <h1 className="w-full text-left text-4xl font-semibold">
           Engineers/Technical Professionals
         </h1>
-        <div className="h-0.5 w-56 bg-[#ffb81c]"></div>
+        <div className="h-1 w-full bg-ucr-yellow" />
       </div>
-
-      <p className="ml-0 mt-2 w-1/2 text-left text-sm leading-relaxed">
+      <p className="mt-2 w-full text-left text-lg leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -20,4 +19,4 @@ const professionals = () => {
   );
 };
 
-export default professionals;
+export default Professionals;
