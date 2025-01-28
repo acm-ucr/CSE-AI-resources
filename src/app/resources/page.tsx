@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <External />
-      <Videos/>
+      <Videos />
     </div>
   );
 };
