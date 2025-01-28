@@ -1,21 +1,11 @@
 import React from "react";
 
-const external = () => {
+const External = () => {
   return (
-    <div style={{ textAlign: "left", marginBottom: "20px" }}>
-      <h1 style={{ fontSize: "60px", fontWeight: "400", margin: "0" }}>
-        External Resources
-      </h1>
-      <div
-        style={{
-          width: "50%",
-          height: "5px",
-          backgroundColor: "#FFB81C",
-          marginTop: "5px",
-          marginLeft: "0",
-        }}
-      ></div>
-      <p style={{ fontSize: "25px", fontWeight: "400" }}>
+    <div className="text-left mb-5">
+      <h1 className="text-6xl font-light m-0">External Resources</h1>
+      <div className="w-[50%] h-[5px] bg-[#FFB81C] mt-2"></div>
+      <p className="text-xl font-light mt-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -25,4 +15,4 @@ const external = () => {
   );
 };
 
-export default external;
+export default External;
