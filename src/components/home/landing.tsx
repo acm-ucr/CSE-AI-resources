@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Background from "@/public/ucr_background.png";
+import Background from "@/public/ucr_background.webp";
 
 const Landing = () => {
   return (
