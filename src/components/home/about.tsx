@@ -5,7 +5,7 @@ const About = () => {
     <div className="font-inter flex w-5/6 flex-col">
       <div className="relative flex h-full items-center gap-6">
         <h1 className="text-6xl">About Us</h1>
-        <p className="h-1 w-3/4 bg-yellow-500" />
+        <p className="h-1 w-3/4 bg-ucr-yellow" />
       </div>
       <p className="mx-auto mt-6 w-full pr-2 text-2xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
