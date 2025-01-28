@@ -2,18 +2,20 @@
 import React from "react";
 import { useState } from "react";
 
-const Carousel = ({ videos }: { videos: string[] }) => {
+const Carousel = ({ title, videos }: { title: string; videos: string[] }) => {
   const [curr, setCurr] = useState(0);
 
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative mb-14 w-full overflow-hidden">
+      <p className="mb-3">{title}</p>
+
       <div
         className="flex transition-transform duration-500 ease-out"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        {videos.map((vid, index: number) => (
+        {videos.map((video, index: number) => (
           <iframe
-            src={vid}
+            src={video}
             key={index}
             width="100%"
             height="300"
@@ -29,7 +31,7 @@ const Carousel = ({ videos }: { videos: string[] }) => {
             <div
               key={i}
               onClick={() => setCurr(i)}
-              className={`h-3 w-3 rounded-full bg-ucr-yellow transition-all ${curr === i ? "p-1" : "bg-opacity-50"} `}
+              className={`h-3 w-3 cursor-pointer rounded-full bg-ucr-yellow transition-all ${curr === i ? "p-1" : "bg-opacity-50"} `}
             />
           ))}
         </div>
