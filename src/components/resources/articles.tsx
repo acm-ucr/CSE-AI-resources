@@ -48,7 +48,7 @@ const Articles = () => {
         <div className="h-1 w-full bg-ucr-yellow"></div>
       </div>
 
-      <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
+      <div className="grid w-5/12 grid-cols-1 md:grid-cols-2">
         <ArticleList
           title="PyTorch Official Tutorials"
           articles={pytorchArticles}
