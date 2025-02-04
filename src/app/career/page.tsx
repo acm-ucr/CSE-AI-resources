@@ -3,11 +3,10 @@ import Career from "@/app/career/career";
 
 const page = () => {
   return (
-  <div>page
-
-  <Career />
-
-  </div>
+    <div>
+      page
+      <Career />
+    </div>
   );
 };
 
