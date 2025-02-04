@@ -4,14 +4,8 @@ import Logo from "@/public/logo.svg";
 
 const Footer = () => {
   return (
-    <div className="flex h-60 flex-col items-center bg-[#003DA5] pt-8">
-      <Image
-        src={Logo}
-        alt="logo"
-        width={300}
-        height={250}
-        className="mb-4 h-1/6 w-auto"
-      ></Image>
+    <div className="flex h-60 flex-col items-center bg-ucr-blue p-8">
+      <Image src={Logo} alt="logo" />
     </div>
   );
 };
