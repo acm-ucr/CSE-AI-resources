@@ -6,6 +6,7 @@ const categoryTitles: { [key: string]: string } = {
   pytorch: "PyTorch Official Tutorials",
   kaggle: "Kaggle Projects",
 };
+
 const Articles = () => {
   return (
     <div className="m-20 w-11/12 self-start">
