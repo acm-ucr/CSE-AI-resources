@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import notesData, { Note } from "../../data/notesData";
+import { notesData } from "@/data/notesData";
 
-const notes = () => {
+const Notes = () => {
   return (
     <div className="font-inter items-left w-auto">
       <div className="mb-8 flex items-center">
@@ -11,9 +11,9 @@ const notes = () => {
       </div>
 
       <div className="flex flex-col gap-2 text-left">
-        {notesData.map((note: Note) => (
+        {notesData.map((note, index) => (
           <Link
-            key={note.id}
+            key={index}
             href={note.url}
             target="_blank"
             className="text-2xl text-ucr-blue underline"
@@ -26,4 +26,4 @@ const notes = () => {
   );
 };
 
-export default notes;
+export default Notes;
