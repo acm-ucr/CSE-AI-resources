@@ -11,7 +11,7 @@ const Home = () => {
       <Welcome />
       <About />
       <Education />
-      <News/>
+      <News />
     </div>
   );
 };
