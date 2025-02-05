@@ -11,13 +11,7 @@ const Home = () => {
       <Welcome />
       <About />
       <Education />
-      <News
-        title="TITLE"
-        pageLink="/"
-        imageLink="https://www.magnite.com/wp-content/uploads/2024/05/surface-xSiQBSq-I0M-unsplash.jpg"
-        imageAlt="alt test"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      />
+      <News />
     </div>
   );
 };
