@@ -1,32 +1,25 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { newsData } from "@/data/news";
+import New from "./new";
 
 const News = () => {
   return (
-    <div className="grid h-96 grid-cols-3 gap-20 p-20">
-      {newsData.map((news, index) => (
-        <div key={index} className="w-80 flex-col">
-          <div className="flex h-64 items-center justify-center overflow-hidden">
-            <Image
-              src={news.image}
-              alt={news.imageAlt}
-              width={300}
-              height={250}
-              className="h-full w-full object-cover"
-            ></Image>
-          </div>
-          <article>
-            <p className="line-clamp-1 pt-4 text-2xl font-bold">
-              <Link href={news.refLink} className="hover:underline">
-                {news.title}
-              </Link>
-            </p>
-            <p className="line-clamp-6 pt-2 text-sm">{news.text}</p>
-          </article>
-        </div>
-      ))}
+    <div className="flex flex-col items-center">
+      <div className="flex w-11/12 items-center gap-6">
+        <h1 className="my-8 text-left text-6xl">Recent News</h1>
+        <span className="flex-grow border-2 border-ucr-yellow" />
+      </div>
+      <div className="mb-[10vh] grid h-full grid-cols-3 justify-items-center gap-0 p-0">
+        {newsData.map((news, index) => (
+          <New
+            title={news.title}
+            text={news.text}
+            link={news.refLink}
+            image={news.image}
+            alt={news.imageAlt}
+            key={index}
+          />
+        ))}
+      </div>
     </div>
   );
 };

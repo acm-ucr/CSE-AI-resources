@@ -1,8 +1,4 @@
-export type Note = {
-  id: number;
-  title: string;
-  url: string;
-};
+import { Note } from "@/types/data";
 
 export const notesData: Note[] = [
   {

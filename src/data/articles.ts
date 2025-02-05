@@ -1,8 +1,4 @@
-type Data = {
-  id: number;
-  title: string;
-  link: string;
-};
+import { Data } from "@/types/data";
 
 export const articlesData: Record<string, Data[]> = {
   pytorch: [

@@ -40,11 +40,12 @@ const Navigation = () => {
               onClick={() => {
                 setSelected(item.name);
               }}
-              className={`duration-300 hover:text-ucr-yellow ${
+              className={`group relative duration-300 hover:text-ucr-yellow ${
                 selected === item.name ? "text-ucr-yellow" : "text-white"
               }`}
             >
               {item.name}
+              <span className="absolute -bottom-0.5 left-0 h-[3px] w-0 bg-ucr-yellow transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </div>
