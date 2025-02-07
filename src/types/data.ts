@@ -19,3 +19,16 @@ export type Data = {
   title: string;
   link: string;
 };
+
+type Prerequisite = {
+  name: string;
+  indent: number;
+};
+
+export interface Course {
+  header: string;
+  description: string;
+  books: string[];
+  platforms: string[];
+  prerequisites: Prerequisite[];
+}

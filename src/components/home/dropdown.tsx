@@ -32,10 +32,10 @@ const Dropdown = ({
   const [prerequisitesOpen, setPrerequisitesOpen] = useState(false);
 
   return (
-    <div className="pb-9 pt-2">
+    <div className="py-1">
       <Collapsible open={courseOpen} onOpenChange={setCourseOpen}>
         <CollapsibleTrigger asChild>
-          <div className="m-4 flex cursor-pointer gap-6 text-4xl">
+          <div className="m-4 flex cursor-pointer gap-6 text-3xl">
             <Image
               src={YellowTriangle}
               alt="Yellow Triangle"
@@ -52,7 +52,7 @@ const Dropdown = ({
 
           <Collapsible open={resourcesOpen} onOpenChange={setResourcesOpen}>
             <CollapsibleTrigger asChild>
-              <div className="mb-3 flex cursor-pointer gap-6 pl-7 text-2xl">
+              <div className="mb-3 flex cursor-pointer gap-6 pl-7 text-xl">
                 <Image
                   src={BlueTriangle}
                   alt="Blue Triangle"
@@ -63,7 +63,7 @@ const Dropdown = ({
             </CollapsibleTrigger>
 
             <CollapsibleContent>
-              <div className="mt-2 space-y-5 pb-2 pl-20 text-xl">
+              <div className="mt-2 space-y-5 pb-2 pl-20 text-lg">
                 <p>
                   Course Materials: Provided by UCR instructors (lecture
                   slides,notes).
@@ -89,7 +89,7 @@ const Dropdown = ({
             onOpenChange={setPrerequisitesOpen}
           >
             <CollapsibleTrigger asChild>
-              <div className="flex cursor-pointer gap-6 pl-7 text-2xl">
+              <div className="flex cursor-pointer gap-6 pl-7 text-xl">
                 <Image
                   src={BlueTriangle}
                   alt="Blue Triangle"
