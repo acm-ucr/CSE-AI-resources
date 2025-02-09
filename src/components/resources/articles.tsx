@@ -8,7 +8,7 @@ const categoryTitles: { [key: string]: string } = {
 };
 const Articles = () => {
   return (
-    <div className="m-20 w-11/12 self-start">
+    <div className="w-full p-20">
       <div className="mb-6 flex items-center gap-10 text-6xl">
         Articles
         <div className="h-1 flex-1 bg-ucr-yellow"></div>
