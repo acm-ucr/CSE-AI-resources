@@ -2,12 +2,12 @@ import React from "react";
 
 const External = () => {
   return (
-    <div className="flex w-5/6 flex-col items-center justify-center">
-      <div className="flex h-full w-full items-center gap-0">
-        <h1 className="w-full text-6xl">External Resources</h1>
-        <p className="h-1 w-full bg-ucr-yellow" />
+    <div className="p-20">
+      <div className="mb-7 inline-block">
+        <h1 className="mb-4 text-6xl">External Resources</h1>
+        <div className="h-1 bg-ucr-yellow"></div>
       </div>
-      <p className="m-1 mt-4 text-xl font-light">
+      <p className="font-inter text-2xl font-normal leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
