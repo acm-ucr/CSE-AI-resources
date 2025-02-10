@@ -2,7 +2,7 @@ import React from "react";
 
 const Professionals = () => {
   return (
-    <div className="mt-4 flex flex-col items-center px-20">
+    <div className="mt-4 flex flex-col items-center p~5 ml-auto w-11/12 mr-auto">
       <div className="flex w-full items-center">
         <h1 className="w-full whitespace-nowrap text-left text-6xl">
           Engineers/Technical Professionals

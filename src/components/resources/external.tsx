@@ -2,7 +2,7 @@ import React from "react";
 
 const External = () => {
   return (
-    <div className="p-20">
+    <div className="mt-20 p~5 ml-auto w-11/12 mr-auto mb-20">
       <div className="mb-7 inline-block">
         <h1 className="mb-4 text-6xl">External Resources</h1>
         <div className="h-1 bg-ucr-yellow"></div>

@@ -4,7 +4,7 @@ import { notesData } from "@/data/notesData";
 
 const Notes = () => {
   return (
-    <div className="font-inter items-left w-full px-20">
+    <div className="mt-20 p~5 ml-auto w-11/12 mr-auto mb-20">
       <div className="mb-8 flex items-center">
         <h1 className="flex w-96 flex-col gap-2 whitespace-nowrap text-6xl">
           Lecture Notes
