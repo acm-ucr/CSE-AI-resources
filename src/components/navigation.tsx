@@ -56,9 +56,9 @@ const Navigation = () => {
       </div>
 
       <div
-        className={`absolute left-0 top-24 z-40 w-full transform bg-ucr-blue text-white transition-transform duration-300 ${
-          navOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        } flex flex-col items-center space-y-4 py-6 md:hidden`}
+        className={`absolute left-0 top-36 z-40 flex w-full flex-col items-center space-y-4 overflow-hidden bg-ucr-blue py-6 text-white transition-all duration-300 md:hidden ${
+          navOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
         {ITEMS.map((item, index) => (
           <Link
