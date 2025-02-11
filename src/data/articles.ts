@@ -1,4 +1,6 @@
-export const articlesData = {
+import { Data } from "@/types/data";
+
+export const articlesData: Record<string, Data[]> = {
   pytorch: [
     { id: 1, title: "CIFAR10 Classifier", link: "#" },
     { id: 2, title: "MNIST", link: "#" },

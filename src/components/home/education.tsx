@@ -1,5 +1,3 @@
-import React from "react";
-
 const Education = () => {
   return (
     <div className="flex w-5/6 flex-col">

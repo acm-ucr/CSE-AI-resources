@@ -1,8 +1,9 @@
-import React from "react";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/UCRLogo.svg";
-import { items } from "@/data/nav";
+import { ITEMS } from "@/data/nav";
+import { usePathname } from "next/navigation";
 
 type Item = {
   name: string;
@@ -10,6 +11,8 @@ type Item = {
 };
 
 const Navigation = () => {
+  const pathname = usePathname();
+
   return (
     <div className="bg-ucr-blue text-white">
       <p className="bg-ucr-yellow p-3 text-center text-lg font-light text-black">
@@ -25,10 +28,22 @@ const Navigation = () => {
           CSE AI
         </div>
         <div className="flex items-center space-x-7 pr-4 text-2xl">
-          {items.map((item: Item, index: number) => (
-            <Link href={item.href} key={index}>
-              {" "}
-              {item.name}{" "}
+          {ITEMS.map((item: Item, index: number) => (
+            <Link
+              href={item.href}
+              key={index}
+              className={`group relative duration-300 ${
+                pathname === item.href
+                  ? "text-ucr-yellow"
+                  : "text-white hover:text-ucr-yellow"
+              }`}
+            >
+              {item.name}
+              <span
+                className={`absolute -bottom-0.5 left-0 h-[3px] bg-ucr-yellow transition-all duration-300 ${
+                  pathname === item.href ? "w-full" : "w-0 group-hover:w-full"
+                }`}
+              />
             </Link>
           ))}
         </div>

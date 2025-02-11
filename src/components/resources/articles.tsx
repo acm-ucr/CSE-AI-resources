@@ -6,9 +6,10 @@ const categoryTitles: { [key: string]: string } = {
   pytorch: "PyTorch Official Tutorials",
   kaggle: "Kaggle Projects",
 };
+
 const Articles = () => {
   return (
-    <div className="m-20 w-11/12 self-start">
+    <div className="p~5 mb-20 ml-auto mr-auto mt-20 w-11/12">
       <div className="mb-6 flex items-center gap-10 text-6xl">
         Articles
         <div className="h-1 flex-1 bg-ucr-yellow"></div>

@@ -1,10 +1,6 @@
-export type Note = {
-  id: number;
-  title: string;
-  url: string;
-};
+import { Note } from "@/types/data";
 
-const notesData: Note[] = [
+export const notesData: Note[] = [
   {
     id: 1,
     title: "Stanford CS229 Machine Learning Lecture Notes",
@@ -16,5 +12,3 @@ const notesData: Note[] = [
     url: "www.mocklink.com",
   },
 ];
-
-export default notesData;

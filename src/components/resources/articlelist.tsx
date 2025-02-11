@@ -12,7 +12,7 @@ interface ArticleListProps {
   articles: Article[];
 }
 
-const ArticleList: React.FC<ArticleListProps> = ({ title, articles }) => (
+const ArticleList = ({ title, articles }: ArticleListProps) => (
   <div>
     <h2 className="mb-4 text-2xl">{title}</h2>
     <ol className="space-y-1">
