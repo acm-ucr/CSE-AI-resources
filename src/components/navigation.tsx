@@ -17,16 +17,16 @@ const Navigation = () => {
         University of California, Riverside
       </p>
 
-      <div className="flex h-24 items-center justify-between px-4 md:px-8">
+      <div className="flex h-24 items-center justify-between px-4 lg:px-10">
         <div className="flex items-center space-x-3 text-4xl font-medium">
           <Link href={"/"}>
-            <Image src={Logo} alt="UCR Logo" className="w-20" />
+            <Image src={Logo} alt="UCR Logo" className="w-28" />
           </Link>
-          <p className="pr-4 text-5xl font-extralight text-ucr-yellow">|</p>
-          <span className="hidden md:inline">CSE AI</span>
+          <p className="font-extralight text-ucr-yellow lg:text-5xl">|</p>
+          <span className="hidden w-full md:inline">CSE AI</span>
         </div>
 
-        <div className="hidden items-center space-x-7 text-2xl md:flex">
+        <div className="hidden items-center space-x-7 text-xl md:flex lg:text-2xl">
           {ITEMS.map((item, index) => (
             <Link
               href={item.href}
