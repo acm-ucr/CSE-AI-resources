@@ -9,13 +9,13 @@ const categoryTitles: { [key: string]: string } = {
 
 const Articles = () => {
   return (
-    <div className="p~5 mb-20 ml-auto mr-auto mt-20 w-11/12">
-      <div className="mb-6 flex items-center gap-10 text-6xl">
+    <div className="mb-20 ml-auto mr-auto mt-20 w-11/12 p-6">
+      <div className="mb-6 flex items-center gap-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
         Articles
         <div className="h-1 flex-1 bg-ucr-yellow"></div>
       </div>
 
-      <div className="grid w-5/12 grid-cols-1 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
         {Object.entries(articlesData).map(([category, articles]) => (
           <ArticleList
             key={category}
