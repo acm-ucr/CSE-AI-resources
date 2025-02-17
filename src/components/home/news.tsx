@@ -8,7 +8,7 @@ const News = () => {
         <h1 className="my-8 text-left text-6xl">Recent News</h1>
         <span className="flex-grow border-2 border-ucr-yellow" />
       </div>
-      <div className="mb-[10vh] grid h-full sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-y-12 p-0">
+      <div className="mb-[10vh] grid h-full justify-items-center gap-y-12 p-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {newsData.map((news, index) => (
           <New
             title={news.title}
