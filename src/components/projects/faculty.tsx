@@ -1,11 +1,11 @@
 import React from "react";
-import Image from "next/image";
 import { faculty } from "@/data/faculty";
+import Faculties from "./faculties";
 
 const Faculty = () => {
   return (
     <div>
-      <div className="items-left flex flex-col p-20">
+      <div className="flex flex-col p-4">
         <div className="flex items-center">
           <h1 className="font-inter text-6xl font-normal leading-relaxed">
             Faculty
@@ -14,29 +14,15 @@ const Faculty = () => {
         </div>
       </div>
 
-      <div className="grid h-96 auto-rows-auto grid-cols-3 justify-items-center gap-10">
+      <div className="my-4 grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3">
         {faculty.map((faculty, index) => (
-          <div key={index} className="w-8/12 flex-col">
-            <div className="font-inter flex-col items-center justify-center overflow-hidden">
-              <div className="flex-none bg-blue-200">
-                <Image
-                  className="overflow-hidden"
-                  width={750}
-                  height={900}
-                  src={faculty.facultyImageLink}
-                  alt={`A portrait of ${faculty.facultyName}`}
-                />
-              </div>
-              <div className="h-full flex-none bg-[#375cae]">
-                <p className="line-clamp-1 p-4 align-middle text-4xl text-white">
-                  {faculty.facultyName}
-                </p>
-                <p className="line-clamp-1 text-wrap p-4 pb-12 pl-6 pt-0 align-middle text-xl text-gray-200">
-                  {faculty.facultyDescription}
-                </p>
-              </div>
-            </div>
-          </div>
+          <Faculties
+            key={index}
+            name={faculty.facultyName}
+            description={faculty.facultyDescription}
+            image={faculty.facultyImageLink}
+            alt={faculty.facultyName}
+          />
         ))}
       </div>
     </div>
