@@ -7,7 +7,7 @@ const About = () => {
         <h1 className="text-6xl">About Us</h1>
         <p className="h-1 w-3/4 bg-ucr-yellow" />
       </div>
-      <p className="mx-auto mt-6 w-full pr-2 text-2xl">
+      <p className="mx-auto mt-6 w-full pr-2 text-lg">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
