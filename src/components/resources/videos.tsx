@@ -9,13 +9,13 @@ type Video = {
 
 const Videos = () => {
   return (
-    <div className="p~5 mb-20 ml-auto mr-auto mt-20 w-11/12">
-      <div className="mb-11 flex items-center gap-10 text-6xl">
+    <div className="mb-20 ml-auto mr-auto mt-20 w-11/12 p-5">
+      <div className="mb-11 flex items-center gap-10 text-5xl md:text-6xl">
         Videos
         <div className="h-1 w-full bg-ucr-yellow"></div>
       </div>
 
-      <div className="columns-2 gap-x-40 text-xl">
+      <div className="grid grid-cols-1 gap-10 text-xl md:grid-cols-2">
         {videos.map((item: Video, index: number) => (
           <Carousel title={item.title} videos={item.videos} key={index} />
         ))}
