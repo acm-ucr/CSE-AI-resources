@@ -1,5 +1,4 @@
 import About from "@/components/home/about";
-import Dropdowns from "@/components/home/dropdowns";
 import Education from "@/components/home/education";
 import Landing from "@/components/home/landing";
 import News from "@/components/home/news";
@@ -12,7 +11,6 @@ const Home = () => {
       <Welcome />
       <About />
       <Education />
-      <Dropdowns />
       <News />
     </div>
   );
