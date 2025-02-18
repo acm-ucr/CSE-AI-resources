@@ -1,4 +1,4 @@
-import mock from "@/public/mock.png";
+import mock from "@/public/mock.webp";
 import { News } from "@/types/data";
 
 export const newsData: News[] = [
