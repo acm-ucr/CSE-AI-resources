@@ -20,7 +20,7 @@ const Navigation = () => {
       <div className="flex h-24 items-center justify-between px-4 lg:px-10">
         <div className="flex items-center space-x-3 text-4xl font-medium">
           <Link href={"/"}>
-            <Image src={Logo} alt="UCR Logo" className="w-28" />
+            <Image src={Logo} alt="UCR Logo" className="w-fit md:w-24" />
           </Link>
           <p className="font-extralight text-ucr-yellow lg:text-5xl">|</p>
           <span className="hidden w-full md:inline">CSE AI</span>
