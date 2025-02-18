@@ -14,7 +14,7 @@ const Landing = () => {
       </div>
       <div className="absolute h-[500px] w-full bg-gradient-to-r from-[#003ca581] to-[#003DA5] opacity-[87%] sm:h-full"></div>
       <div className="z-10 flex flex-col items-center justify-center">
-        <p className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[80px] text-center">
+        <p className="text-center text-[30px] sm:text-[40px] md:text-[50px] lg:text-[70px] xl:text-[80px]">
           Computer Science Education
         </p>
         <div className="mb-2 mt-1 h-[2px] w-28 bg-[#FFB81C] sm:mb-3 sm:h-[3px] sm:w-36 md:mb-4 lg:mb-6 lg:h-1 lg:w-44"></div>
