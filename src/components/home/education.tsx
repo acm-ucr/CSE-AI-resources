@@ -5,7 +5,6 @@ const Education = () => {
         <h1 className="whitespace-nowrap text-4xl md:text-6xl">Education</h1>
         <div className="flex-grow border-2 border-ucr-yellow"></div>
       </div>
-
       <p className="mt-4 text-base leading-relaxed md:text-lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
         labore vitae, molestias autem nam officiis numquam quam repudiandae
