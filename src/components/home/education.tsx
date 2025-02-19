@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <div className="flex w-full max-w-5xl flex-col px-4 md:px-8">
+    <div className="flex w-full flex-col px-4 md:w-5/6 md:px-0">
       <div className="flex items-center gap-4 md:gap-6">
         <h1 className="whitespace-nowrap text-4xl md:text-6xl">Education</h1>
         <div className="flex-grow border-2 border-ucr-yellow"></div>
