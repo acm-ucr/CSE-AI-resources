@@ -21,7 +21,7 @@ export const TimelineLayout = () => {
   };
 
   return (
-    <div className="flex gap-10 md:w-5/6">
+    <div className="grid grid-cols-2 md:w-5/6">
       {Object.entries(timelineData).map(([level, items]) => (
         <Timeline key={level} className="mt-8 w-full">
           <div className="mb-4 text-center text-xl font-semibold md:mb-10 md:text-4xl">

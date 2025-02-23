@@ -1,5 +1,5 @@
 import * as React from "react";
-import { cn } from "@/utils/utils";
+import { cn } from "@/utils/tailwind";
 import { Badge } from "@/components/ui/badge";
 
 const Timeline = React.forwardRef<

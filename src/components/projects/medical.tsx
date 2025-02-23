@@ -1,14 +1,9 @@
-import React from "react";
+import Title from "../title";
 
 const Medical = () => {
   return (
-    <div className="p~5 mb-20 ml-auto mr-auto mt-20 w-11/12">
-      <div className="flex items-center">
-        <h1 className="font-inter py-10 text-6xl font-normal leading-relaxed">
-          Medical
-        </h1>
-        <div className="ml-8 h-1 w-11/12 bg-ucr-yellow"></div>
-      </div>
+    <div className="mb-5 ml-auto mr-auto mt-5 w-11/12">
+      <Title title="Medical" underline />
       <p className="font-inter px-2 text-2xl font-normal">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

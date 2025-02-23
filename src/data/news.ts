@@ -1,7 +1,7 @@
 import mock from "@/public/mock.webp";
-import { News } from "@/types/data";
+import { News } from "@/types";
 
-export const newsData: News[] = [
+export const NEWS: News[] = [
   {
     image: mock,
     imageAlt: "error loading image",

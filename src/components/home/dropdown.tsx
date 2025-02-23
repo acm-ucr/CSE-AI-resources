@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+
+import { useState } from "react";
 import Image from "next/image";
 import BlueTriangle from "@/public/bluetriangle.svg";
 import YellowTriangle from "@/public/yellowtriangle.svg";
@@ -9,9 +10,17 @@ const Collapsible = CollapsiblePrimitive.Root;
 const CollapsibleTrigger = CollapsiblePrimitive.CollapsibleTrigger;
 const CollapsibleContent = CollapsiblePrimitive.CollapsibleContent;
 
-type Prerequisite = {
+type prerequisite = {
   name: string;
   indent: number;
+};
+
+type props = {
+  header: string;
+  description: string;
+  books: string[];
+  platforms: string[];
+  prerequisites: prerequisite[];
 };
 
 const Dropdown = ({
@@ -20,13 +29,7 @@ const Dropdown = ({
   books,
   platforms,
   prerequisites,
-}: {
-  header: string;
-  description: string;
-  books: string[];
-  platforms: string[];
-  prerequisites: Prerequisite[];
-}) => {
+}: props) => {
   const [courseOpen, setCourseOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const [prerequisitesOpen, setPrerequisitesOpen] = useState(false);
@@ -37,9 +40,9 @@ const Dropdown = ({
         <CollapsibleTrigger asChild>
           <div className="m-4 flex cursor-pointer gap-6 text-3xl">
             <Image
-              src={YellowTriangle}
+              src={courseOpen ? YellowTriangle : BlueTriangle}
               alt="Yellow Triangle"
-              className={`duration-300 ${courseOpen ? "rotate-90" : "rotate-0"}`}
+              className={`duration-300 ${courseOpen ? "rotate-90" : "-rotate-90"}`}
             />
             {header}
           </div>
@@ -54,9 +57,9 @@ const Dropdown = ({
             <CollapsibleTrigger asChild>
               <div className="mb-3 flex cursor-pointer gap-6 pl-7 text-xl">
                 <Image
-                  src={BlueTriangle}
+                  src={resourcesOpen ? YellowTriangle : BlueTriangle}
                   alt="Blue Triangle"
-                  className={`duration-300 ${resourcesOpen ? "rotate-0" : "-rotate-90"}`}
+                  className={`duration-300 ${resourcesOpen ? "rotate-90" : "-rotate-90"}`}
                 />
                 Resources
               </div>
@@ -91,9 +94,9 @@ const Dropdown = ({
             <CollapsibleTrigger asChild>
               <div className="flex cursor-pointer gap-6 pl-7 text-xl">
                 <Image
-                  src={BlueTriangle}
+                  src={prerequisitesOpen ? YellowTriangle : BlueTriangle}
                   alt="Blue Triangle"
-                  className={`duration-300 ${prerequisitesOpen ? "rotate-0" : "-rotate-90"}`}
+                  className={`duration-300 ${prerequisitesOpen ? "rotate-90" : "-rotate-90"}`}
                 />
                 Prerequisites
               </div>

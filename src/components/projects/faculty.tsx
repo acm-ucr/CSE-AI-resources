@@ -1,20 +1,13 @@
 import React from "react";
 import { faculty } from "@/data/faculty";
 import Faculties from "./faculties";
+import Title from "../title";
 
 const Faculty = () => {
   return (
-    <div>
-      <div className="flex flex-col p-4">
-        <div className="flex items-center">
-          <h1 className="font-inter text-6xl font-normal leading-relaxed">
-            Faculty
-          </h1>
-          <div className="ml-8 h-1 w-11/12 bg-ucr-yellow" />
-        </div>
-      </div>
-
-      <div className="my-4 grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="flex w-11/12 flex-col items-center gap-4 md:gap-6">
+      <Title title="Faculty" underline />
+      <div className="my-4 mt-5 grid grid-cols-1 justify-items-center gap-10 md:grid-cols-2 lg:grid-cols-3">
         {faculty.map((faculty, index) => (
           <Faculties
             key={index}

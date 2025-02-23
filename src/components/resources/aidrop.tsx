@@ -1,6 +1,6 @@
 import Dropdown from "../home/dropdown";
 import { courses } from "@/data/courses";
-import { Course } from "@/types/data";
+import { Course } from "@/types";
 
 const Dropdowns = () => {
   return (
