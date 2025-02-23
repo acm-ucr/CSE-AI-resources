@@ -55,7 +55,6 @@ const Navigation = () => {
           />
         </div>
       </div>
-
       <div
         className={`absolute left-0 top-36 z-40 flex w-full flex-col items-center space-y-4 overflow-hidden bg-ucr-blue py-6 text-white transition-all duration-300 md:hidden ${
           navOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"

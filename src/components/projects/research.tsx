@@ -13,22 +13,10 @@ const Research = () => {
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <div className="flex justify-around gap-20">
-        <Image
-          src={mock}
-          alt="Image placeholder with blue background"
-          className="w-full"
-        />
-        <Image
-          src={mock}
-          alt="Image placeholder with blue background"
-          className="w-full"
-        />
-        <Image
-          src={mock}
-          alt="Image placeholder with blue background"
-          className="w-full"
-        />
+      <div className="flex justify-around gap-10">
+        <div className="h-24 w-96 bg-ucr-blue/80 md:h-96" />
+        <div className="h-24 w-96 bg-ucr-blue/80 md:h-96" />
+        <div className="h-24 w-96 bg-ucr-blue/80 md:h-96" />
       </div>
     </div>
   );
