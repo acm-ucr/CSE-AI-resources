@@ -1,6 +1,6 @@
 import { Note } from "@/types/data";
 
-export const notesData: Note[] = [
+export const NOTES: Note[] = [
   {
     id: 1,
     title: "Stanford CS229 Machine Learning Lecture Notes",

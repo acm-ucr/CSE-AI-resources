@@ -1,4 +1,4 @@
-export const videos = [
+export const VIDEOS = [
   {
     title: "3Blue1Brown Deep Learning Series",
     videos: [

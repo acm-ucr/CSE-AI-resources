@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { notesData } from "@/data/notesData";
+import { NOTES } from "@/data/notesData";
 
 const Notes = () => {
   return (
@@ -13,7 +13,7 @@ const Notes = () => {
       </div>
 
       <div className="flex flex-col gap-2 text-left">
-        {notesData.map((note, index) => (
+        {NOTES.map((note, index) => (
           <Link
             key={index}
             href={note.url}

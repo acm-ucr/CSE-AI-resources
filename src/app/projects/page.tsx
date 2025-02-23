@@ -6,7 +6,7 @@ import Business from "@/components/projects/business";
 
 const page = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center gap-8">
       <Research />
       <Professionals />
       <Business />

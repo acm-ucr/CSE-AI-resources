@@ -1,11 +1,12 @@
 "use client";
+
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Logo from "@/public/UCRLogo.svg";
 import { ITEMS } from "@/data/nav";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import Logo from "@/public/UCRLogo.svg";
 
 const Navigation = () => {
   const pathname = usePathname();

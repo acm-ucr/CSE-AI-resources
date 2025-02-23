@@ -1,8 +1,13 @@
 "use client";
-import React from "react";
+
 import { useState } from "react";
 
-const Carousel = ({ title, videos }: { title: string; videos: string[] }) => {
+type carouselProps = {
+  title: string;
+  videos: string[];
+};
+
+const Carousel = ({ title, videos }: carouselProps) => {
   const [curr, setCurr] = useState(0);
 
   return (

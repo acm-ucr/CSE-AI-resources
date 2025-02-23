@@ -1,14 +1,10 @@
 import React from "react";
+import Title from "../title";
 
 const Business = () => {
   return (
-    <div className="items-left flex flex-col p-20">
-      <div className="flex items-center">
-        <h1 className="font-inter py-10 text-6xl font-normal leading-relaxed">
-          Business
-        </h1>
-        <div className="ml-8 h-1 w-11/12 bg-ucr-yellow"></div>
-      </div>
+    <div className="flex w-11/12 flex-col">
+      <Title title={"Business"} underline />
       <p className="font-inter text-2xl font-normal leading-relaxed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
