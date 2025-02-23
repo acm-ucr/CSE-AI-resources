@@ -15,7 +15,7 @@ const Title = ({
           <div className="flex-grow border-2 border-ucr-yellow" />
         </div>
       ) : (
-        <h1 className="mb-3 border-b-[4px] border-ucr-yellow pb-2 text-6xl text-black">
+        <h1 className="mb-3 border-b-[4px] border-ucr-yellow pb-2 text-4xl text-black md:text-6xl">
           {title}
         </h1>
       )}
