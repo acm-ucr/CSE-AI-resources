@@ -1,4 +1,4 @@
-import { Course } from "@/types/data";
+import { Course } from "@/types";
 
 export const courses: Record<string, Course[]> = {
   Beginner: [

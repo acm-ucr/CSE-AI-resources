@@ -10,7 +10,7 @@ export const metadata = {
   title:
     "Artificial Intelligence and Machine Learning Resources - University of California, Riverside",
   description:
-    "A resource hub for students at UCR to learn more about Artificial Intelligence Machine Learning.",
+    "A resource hub for students at UCR to learn more about Artificial Intelligence and Machine Learning.",
 };
 
 type LayoutProps = {

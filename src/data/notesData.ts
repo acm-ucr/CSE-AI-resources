@@ -1,4 +1,4 @@
-import { Note } from "@/types/data";
+import { Note } from "@/types";
 
 export const NOTES: Note[] = [
   {
