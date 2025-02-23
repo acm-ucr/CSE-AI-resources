@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import mock from "@/public/mock.webp";
 import Title from "../title";
 
 const Research = () => {
