@@ -1,6 +1,6 @@
 import { TimelineLayout } from "@/components/education/timeline-layout";
 
-import Dropdowns from "@/components/home/dropdowns";
+import Dropdowns from "@/components/education/dropdowns";
 import React from "react";
 
 const page = () => {

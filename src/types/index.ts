@@ -39,3 +39,15 @@ export type TimelineItemType = {
   description?: string;
   time: string;
 };
+
+export type resource = {
+  header: string;
+  description: string[];
+  reading: linkableProps[];
+  video: linkableProps[];
+};
+
+type linkableProps = {
+  text: string;
+  link: string;
+};
