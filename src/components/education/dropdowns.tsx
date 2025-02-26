@@ -1,4 +1,4 @@
-import Dropdown from "../home/dropdown";
+import Dropdown from "./course-dropdown";
 import { courses } from "@/data/courses";
 import { Course } from "@/types";
 
