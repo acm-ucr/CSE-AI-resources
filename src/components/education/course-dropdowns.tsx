@@ -1,7 +1,7 @@
-import Dropdown from "./dropdown";
+import Dropdown from "./course-dropdown";
 import { courses } from "@/data/courses";
 
-const Dropdowns = () => {
+const CourseDropdowns = () => {
   return (
     <div className="w-5/6">
       {Object.keys(courses).map((level) => (
@@ -30,4 +30,4 @@ const Dropdowns = () => {
   );
 };
 
-export default Dropdowns;
+export default CourseDropdowns;
