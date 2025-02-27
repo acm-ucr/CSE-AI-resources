@@ -1,6 +1,5 @@
 import Dropdown from "./dropdown";
 import { courses } from "@/data/courses";
-import { Course } from "@/types";
 
 const Dropdowns = () => {
   return (
@@ -10,13 +9,13 @@ const Dropdowns = () => {
           <p className="mt-10 bg-ucr-blue bg-opacity-45 p-2 text-4xl font-medium">
             {level}
           </p>
-          {courses[level].map((item: Course, index: number) => (
+          {courses[level].map(({header, description, books, platforms, prerequisites}, index) => (
             <Dropdown
-              header={item.header}
-              description={item.description}
-              books={item.books}
-              platforms={item.platforms}
-              prerequisites={item.prerequisites}
+              header={header}
+              description={description}
+              books={books}
+              platforms={platforms}
+              prerequisites={prerequisites}
               key={index}
             />
           ))}
