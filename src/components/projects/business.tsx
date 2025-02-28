@@ -6,10 +6,11 @@ const Business = () => {
     <div className="flex w-11/12 flex-col">
       <Title title={"Business"} underline />
       <p className="font-inter text-2xl font-normal leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        AI is revolutionizing the way businesses operate, from data-driven
+        decision-making to automation and customer insights. Our research
+        explores how AI can optimize financial strategies, marketing analytics,
+        and operational efficiency, equipping professionals with the tools to
+        navigate an evolving digital economy.
       </p>
     </div>
   );
