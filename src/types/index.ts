@@ -29,9 +29,9 @@ export interface Course {
   header: string;
   description: string;
   prerequisites: Prerequisite[];
-  books: linkableProps[]; 
-  platforms: linkableProps[]; 
-};
+  books: linkableProps[];
+  platforms: linkableProps[];
+}
 
 export type TimelineItemType = {
   title: string;

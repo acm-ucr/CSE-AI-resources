@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Links from "@/components/resources/links"; 
+import Links from "@/components/resources/links";
 
 type prerequisite = {
   name: string;
@@ -29,7 +29,13 @@ type props = {
   prerequisites: prerequisite[];
 };
 
-const CourseDropdown = ({ header, description, books, platforms, prerequisites }: props) => {
+const CourseDropdown = ({
+  header,
+  description,
+  books,
+  platforms,
+  prerequisites,
+}: props) => {
   return (
     <div className="py-1">
       <Accordion type="single" collapsible>
@@ -45,9 +51,7 @@ const CourseDropdown = ({ header, description, books, platforms, prerequisites }
             <Accordion type="multiple" className="border-none">
               <AccordionItem value="resources" className="border-none">
                 <AccordionTrigger className="py-1">
-                  <div className="mb-3 flex gap-6 pl-7 text-xl">
-                    Resources
-                  </div>
+                  <div className="mb-3 flex gap-6 pl-7 text-xl">Resources</div>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="mt-2 space-y-5 pb-2 pl-20 text-lg">
@@ -62,7 +66,7 @@ const CourseDropdown = ({ header, description, books, platforms, prerequisites }
                         <ul>
                           {books.map(({ text, link }, index) => (
                             <li key={index}>
-                              <Links title= "" text={text} link={link} />
+                              <Links title="" text={text} link={link} />
                             </li>
                           ))}
                         </ul>
@@ -89,9 +93,7 @@ const CourseDropdown = ({ header, description, books, platforms, prerequisites }
 
               <AccordionItem value="prerequisites" className="border-none">
                 <AccordionTrigger className="py-1">
-                  <div className="flex gap-6 pl-7 text-xl">
-                    Prerequisites
-                  </div>
+                  <div className="flex gap-6 pl-7 text-xl">Prerequisites</div>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="mt-2 pl-20 text-xl">
@@ -115,7 +117,5 @@ const CourseDropdown = ({ header, description, books, platforms, prerequisites }
     </div>
   );
 };
-
-
 
 export default CourseDropdown;
