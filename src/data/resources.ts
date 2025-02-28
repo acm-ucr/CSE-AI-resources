@@ -38,7 +38,7 @@ export const RESOURCES: Record<string, resource[]> = {
       video: [
         {
           text: "History of AI (Oxford Martin School)",
-          link: "https://www.youtube.com/watch?v=v_o3vJvW7hQ&ab_channel=ZDNET",
+          link: "https://youtu.be/mSd9nmPM7Vg?si=RRfJ9j2snPT-EL3h",
         },
       ],
     },
@@ -54,13 +54,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "MIT Sloan - AI in the Real World",
-          link: "https://www.ibm.com/topics/artificial-intelligence",
+          link: "https://mitsloan.mit.edu/ideas-made-to-matter/topics/artificial-intelligence",
         },
       ],
       video: [
         {
-          text: "AI in Everyday Life (BBC)",
-          link: "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+          text: "Will AI Be Critical to Your Job and Everyday Life? (IBM)",
+          link: "https://www.youtube.com/watch?v=c9LQUI3VMJ8",
         },
       ],
     },
@@ -74,22 +74,22 @@ export const RESOURCES: Record<string, resource[]> = {
         "Data can be structured (like databases of numerical and categorical values) or unstructured (such as images, videos, and text).",
         "The quality of data is more important than quantity—poor data can lead to inaccurate predictions, biased outcomes, or even harmful real-world consequences.",
         "The process of preparing data for AI involves several critical steps:",
-        "• Data Collection – Gathering relevant information from sources like sensors, online databases, or manually labeled datasets.",
-        "• Data Cleaning – Removing inconsistencies, duplicate values, or incorrect entries that could skew results.",
-        "• Data Normalization – Standardizing the range of values so that different attributes contribute fairly to model training.",
-        "• Feature Engineering – Selecting the most relevant pieces of data to improve model performance.",
+        "Data Collection – Gathering relevant information from sources like sensors, online databases, or manually labeled datasets.",
+        "Data Cleaning – Removing inconsistencies, duplicate values, or incorrect entries that could skew results.",
+        "Data Normalization – Standardizing the range of values so that different attributes contribute fairly to model training.",
+        "Feature Engineering – Selecting the most relevant pieces of data to improve model performance.",
         "As AI continues to evolve, there is increasing focus on privacy-preserving AI, where techniques like federated learning allow models to be trained without sharing raw data, addressing ethical and security concerns.",
       ],
       reading: [
         {
-          text: "Importance of Data in AI - Towards Data Science",
-          link: "https://towardsdatascience.com/artificial-intelligence-and-training-data-8020a8e2279c/",
+          text: " AI Needs Data More Than Data Needs AI",
+          link: "https://www.forbes.com/councils/forbestechcouncil/2023/10/05/ai-needs-data-more-than-data-needs-ai/",
         },
       ],
       video: [
         {
-          text: "Why Data is Important in AI (Stanford Online)",
-          link: "https://www.youtube.com/watch?v=l94xsqa_0Rg",
+          text: "Big data rules for AI - IBM",
+          link: "https://www.youtube.com/watch?v=AtXqpveCWQU",
         },
       ],
     },
@@ -104,14 +104,14 @@ export const RESOURCES: Record<string, resource[]> = {
       ],
       reading: [
         {
-          text: "Classical AI Algorithms - GeeksforGeeks",
+          text: "Artificial Intelligence (AI) Algorithms",
           link: "https://www.geeksforgeeks.org/ai-algorithms/",
         },
       ],
       video: [
         {
           text: "Introduction to AI Algorithms (MIT)",
-          link: "https://www.youtube.com/watch?v=Gb_Ft8biE-k",
+          link: "https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/resources/lecture-1-introduction-and-scope/",
         },
       ],
     },
@@ -133,8 +133,8 @@ export const RESOURCES: Record<string, resource[]> = {
       ],
       video: [
         {
-          text: "Supervised vs. Unsupervised Learning (Data School)",
-          link: "https://www.youtube.com/watch?v=ERp6_WT0bL0",
+          text: "Supervised vs. Unsupervised Learning - IBM",
+          link: "https://www.youtube.com/watch?v=W01tIRP_Rqs",
         },
       ],
     },
@@ -156,7 +156,7 @@ export const RESOURCES: Record<string, resource[]> = {
       video: [
         {
           text: "How Generative AI Works (MIT)",
-          link: "https://www.youtube.com/watch?v=D-pLXkS21fM&ab_channel=RickardBr%C3%BCelGabrielsson",
+          link: "https://www.youtube.com/watch?v=D-pLXkS21fM",
         },
       ],
     },
@@ -172,13 +172,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "Open vs Closed Source AI - Medium",
-          link: "https://medium.com/@paul.ekwere/open-source-vs-closed-source-ai-foundation-models-fd6829864fa5#:~:text=Open%20source%20provides%20the%20collaborative,safeguards%20needed%20for%20certain%20applications.",
+          link: "https://medium.com/%40paul.ekwere/open-source-vs-closed-source-ai-foundation-models-fd6829864fa5",
         },
       ],
       video: [
         {
-          text: "Open vs Closed Source AI",
-          link: "https://www.youtube.com/watch?v=LPZ-pErAM8Q&ab_channel=CNBCTelevision",
+          text: "Open vs Closed Source AI (Stanford)",
+          link: "https://www.youtube.com/watch?v=ZfYrJlfLs1Q",
         },
       ],
     },
@@ -196,13 +196,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "AI and the Future of Work - World Economic Forum",
-          link: "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+          link: "https://www.weforum.org/stories/2024/02/artificial-intelligence-ai-jobs-future/",
         },
       ],
       video: [
         {
           text: " How AI is Changing Jobs (PBS)",
-          link: "https://www.pbs.org/wnet/amanpour-and-company/video/the-future-of-jobs-the-impacts-of-ai-the-green-transition/",
+          link: "https://www.pbs.org/video/future-jobs-impacts-ai-green-transition-f7borm/",
         },
       ],
     },
@@ -217,13 +217,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "AI and Privacy Concerns - Harvard Business Review",
-          link: "https://hbr.org/sponsored/2021/03/is-your-privacy-governance-ready-for-ai",
+          link: "https://www.library.hbs.edu/working-knowledge/navigating-consumer-data-privacy-in-an-ai-world",
         },
       ],
       video: [
         {
           text: "AI and Privacy (The Guardian)",
-          link: "https://www.youtube.com/watch?v=zNxw5gJtHLc&pp=ygUPQUkgYW5kIFByaXZhY3kg",
+          link: "https://youtu.be/bWWf4AHfzgM?si=BXeqU35NRNg5zjr2",
         },
       ],
     },
@@ -243,8 +243,8 @@ export const RESOURCES: Record<string, resource[]> = {
       ],
       video: [
         {
-          text: "Bias in AI (Vox)",
-          link: "https://www.youtube.com/watch?v=Hpi6hSV4hpM&ab_channel=DestinLearning",
+          text: "Bias in AI (Google)",
+          link: "https://www.youtube.com/watch?v=59bMh59JQDo",
         },
       ],
     },
