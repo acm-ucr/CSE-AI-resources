@@ -1,22 +1,31 @@
-import Image from "next/image";
-import BlueTriangle from "@/public/bluetriangle.svg";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Links from "@/components/resources/links";
 
 type prerequisite = {
   name: string;
   indent: number;
 };
 
+type book = {
+  text: string;
+  link: string;
+};
+
+type platform = {
+  text: string;
+  link: string;
+};
+
 type props = {
   header: string;
   description: string;
-  books: string[];
-  platforms: string[];
+  books: book[];
+  platforms: platform[];
   prerequisites: prerequisite[];
 };
 
@@ -24,8 +33,8 @@ const CourseDropdown = ({
   header,
   description,
   books,
-  platforms = [],
-  prerequisites = [],
+  platforms,
+  prerequisites,
 }: props) => {
   return (
     <div className="py-1">
@@ -42,14 +51,7 @@ const CourseDropdown = ({
             <Accordion type="multiple" className="border-none">
               <AccordionItem value="resources" className="border-none">
                 <AccordionTrigger className="py-1">
-                  <div className="mb-3 flex gap-6 pl-7 text-xl">
-                    <Image
-                      src={BlueTriangle}
-                      alt="Triangle"
-                      className="-rotate-90 duration-300"
-                    />
-                    Resources
-                  </div>
+                  <div className="mb-3 flex gap-6 pl-7 text-xl">Resources</div>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="mt-2 space-y-5 pb-2 pl-20 text-lg">
@@ -57,43 +59,54 @@ const CourseDropdown = ({
                       Course Materials: Provided by UCR instructors (lecture
                       slides, notes).
                     </p>
-                    <div>
-                      Books:
-                      {books.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
-                    </div>
-                    <div>
-                      Practice Platforms:
-                      {platforms.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
-                    </div>
+
+                    {books.length > 0 && (
+                      <div>
+                        <h3 className="mt-4 text-lg font-semibold">Books:</h3>
+                        <ul>
+                          {books.map(({ text, link }, index) => (
+                            <li key={index}>
+                              <Links title="" text={text} link={link} />
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {platforms.length > 0 && (
+                      <div>
+                        <h3 className="mt-4 text-lg font-semibold">
+                          Practice Platforms:
+                        </h3>
+                        <ul>
+                          {platforms.map(({ text, link }, index) => (
+                            <li key={index}>
+                              <Links title="" text={text} link={link} />
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="prerequisites" className="border-none">
                 <AccordionTrigger className="py-1">
-                  <div className="flex gap-6 pl-7 text-xl">
-                    <Image
-                      src={BlueTriangle}
-                      alt="Triangle"
-                      className="-rotate-90 duration-300"
-                    />
-                    Prerequisites
-                  </div>
+                  <div className="flex gap-6 pl-7 text-xl">Prerequisites</div>
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="mt-2 pl-20 text-xl">
-                    {prerequisites.map((item, index) => (
-                      <li
-                        key={index}
-                        style={{ marginLeft: `${item.indent * 30}px` }}
-                      >
-                        {item.name}
-                      </li>
-                    ))}
+                    <ul>
+                      {prerequisites.map((item, index) => (
+                        <li
+                          key={index}
+                          style={{ marginLeft: `${item.indent * 30}px` }}
+                        >
+                          {item.name}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </AccordionContent>
               </AccordionItem>

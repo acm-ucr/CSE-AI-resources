@@ -9,13 +9,11 @@ export type News = {
 };
 
 export type Note = {
-  id: number;
   title: string;
   url: string;
 };
 
-export type Data = {
-  id: number;
+export type Article = {
   title: string;
   link: string;
 };
@@ -28,9 +26,9 @@ type Prerequisite = {
 export interface Course {
   header: string;
   description: string;
-  books: string[];
-  platforms: string[];
   prerequisites: Prerequisite[];
+  books: linkableProps[];
+  platforms: linkableProps[];
 }
 
 export type TimelineItemType = {

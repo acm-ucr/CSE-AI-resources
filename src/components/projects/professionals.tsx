@@ -6,10 +6,11 @@ const Professionals = () => {
     <div className="mt-4 flex w-11/12 flex-col">
       <Title title=" Technical Professionals" underline />
       <p className="font-inter mx-auto mt-2 text-base font-normal leading-relaxed md:text-xl lg:text-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        AI is reshaping industries, and staying ahead requires continuous
+        learning and adaptation. Our work supports engineers, developers, and
+        industry leaders in harnessing AI for cutting-edge solutions, ethical
+        considerations, and technological advancements, ensuring professionals
+        remain at the forefront of innovation.
       </p>
     </div>
   );

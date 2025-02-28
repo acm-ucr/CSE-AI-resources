@@ -3,18 +3,16 @@ import Title from "../title";
 const Education = () => {
   return (
     <div className="flex w-5/6 flex-col px-0 md:w-5/6 md:px-0">
-      <Title title="Education" underline />
+      <Title title="Our Values" underline />
       <p className="mt-2 text-base leading-relaxed md:text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        labore vitae, molestias autem nam officiis numquam quam repudiandae
-        pariatur dolorem provident dolorum enim tempora doloribus officia
-        veritatis ad cupiditate id? Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Assumenda labore vitae, molestias autem nam officiis
-        numquam quam repudiandae pariatur dolorem provident dolorum enim tempora
-        doloribus officia veritatis ad cupiditate id? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Assumenda labore vitae, molestias autem
-        nam officiis numquam quam repudiandae pariatur dolorem provident dolorum
-        enim tempora doloribus officia veritatis ad cupiditate id?
+        At the core of our initiative lies a commitment to innovation,
+        inclusivity, and integrity. We believe in fostering a community where
+        collaboration and curiosity drive meaningful advancements in AI. By
+        upholding ethical principles, encouraging diverse perspectives, and
+        promoting lifelong learning, we empower students and faculty to shape
+        the future of AI responsibly. Our values ensure that AI education at UCR
+        remains accessible, impactful, and forward-thinking, bridging the gap
+        between cutting-edge research and real-world applications.
       </p>
     </div>
   );
