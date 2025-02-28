@@ -1,7 +1,7 @@
 import { Course } from "@/types";
 
 export const courses: Record<string, Course[]> = {
-  Beginner: [
+  "Introductory Classes for AI": [
     {
       header: "CS 105: Data Analysis Methods",
       description:
@@ -92,48 +92,6 @@ export const courses: Record<string, Course[]> = {
         "Kaggle: NLP challenges (e.g., sentiment analysis, summarization).",
       ],
       prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
-    },
-  ],
-  Intermediate: [
-    {
-      header: "CS 105: Data Analysis Methods",
-      description:
-        "Introduces fundamental concepts and methods in data analysis and visualization essential to various data science tasks.",
-      books: [
-        "Introduction to the Practice of Statistics by Moore, McCabe, and Craig.",
-        "Data Science from Scratch by Joel Grus.",
-      ],
-      platforms: [
-        "LeetCode: Beginner data manipulation problems.",
-        "GeeksforGeeks: For data structure and algorithm fundamentals.",
-      ],
-      prerequisites: [
-        {
-          name: "CS 009B: Data-Oriented Introduction to Computing II (Python)",
-          indent: 0,
-        },
-      ],
-    },
-  ],
-  Advanced: [
-    {
-      header: "CS 105: Data Analysis Methods",
-      description:
-        "Introduces fundamental concepts and methods in data analysis and visualization essential to various data science tasks.",
-      books: [
-        "Introduction to the Practice of Statistics by Moore, McCabe, and Craig.",
-        "Data Science from Scratch by Joel Grus.",
-      ],
-      platforms: [
-        "LeetCode: Beginner data manipulation problems.",
-        "GeeksforGeeks: For data structure and algorithm fundamentals.",
-      ],
-      prerequisites: [
-        {
-          name: "CS 009B: Data-Oriented Introduction to Computing II (Python)",
-          indent: 0,
-        },
-      ],
     },
   ],
 };
