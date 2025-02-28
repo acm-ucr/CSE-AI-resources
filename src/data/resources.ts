@@ -32,13 +32,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "A Short History of AI - Harvard",
-          link: "https://www.ibm.com/topics/artificial-intelligence",
+          link: "https://hbsp.harvard.edu/product/CMR711-PDF-ENG",
         },
       ],
       video: [
         {
           text: "History of AI (Oxford Martin School)",
-          link: "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+          link: "https://www.youtube.com/watch?v=v_o3vJvW7hQ&ab_channel=ZDNET",
         },
       ],
     },
@@ -83,7 +83,7 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "Importance of Data in AI - Towards Data Science",
-          link: "https://towardsdatascience.com/importance-of-data-in-ai-9ab7e41c041f",
+          link: "https://towardsdatascience.com/artificial-intelligence-and-training-data-8020a8e2279c/",
         },
       ],
       video: [
@@ -105,7 +105,7 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "Classical AI Algorithms - GeeksforGeeks",
-          link: "https://www.geeksforgeeks.org/classical-ai-algorithms/",
+          link: "https://www.geeksforgeeks.org/ai-algorithms/",
         },
       ],
       video: [
@@ -150,13 +150,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "What is Generative AI? - NVIDIA",
-          link: "https://www.forbes.com/sites/forbestechcouncil/2023/04/24/what-is-generative-ai-and-how-does-it-work/",
+          link: "https://www.nvidia.com/en-us/glossary/generative-ai/",
         },
       ],
       video: [
         {
           text: "How Generative AI Works (MIT)",
-          link: "https://www.youtube.com/watch?v=QnJdtCm7_gA",
+          link: "https://www.youtube.com/watch?v=D-pLXkS21fM&ab_channel=RickardBr%C3%BCelGabrielsson",
         },
       ],
     },
@@ -172,13 +172,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "Open vs Closed Source AI - Medium",
-          link: "https://www.forbes.com/sites/forbestechcouncil/2023/04/24/what-is-generative-ai-and-how-does-it-work/",
+          link: "https://medium.com/@paul.ekwere/open-source-vs-closed-source-ai-foundation-models-fd6829864fa5#:~:text=Open%20source%20provides%20the%20collaborative,safeguards%20needed%20for%20certain%20applications.",
         },
       ],
       video: [
         {
-          text: "Open vs Closed Source AI (Google Developers)",
-          link: "https://www.youtube.com/watch?v=QnJdtCm7_gA",
+          text: "Open vs Closed Source AI",
+          link: "https://www.youtube.com/watch?v=LPZ-pErAM8Q&ab_channel=CNBCTelevision",
         },
       ],
     },
@@ -196,13 +196,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "AI and the Future of Work - World Economic Forum",
-          link: "https://www.forbes.com/sites/forbestechcouncil/2023/04/24/what-is-generative-ai-and-how-does-it-work/",
+          link: "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
         },
       ],
       video: [
         {
           text: " How AI is Changing Jobs (PBS)",
-          link: "https://www.youtube.com/watch?v=QnJdtCm7_gA",
+          link: "https://www.pbs.org/wnet/amanpour-and-company/video/the-future-of-jobs-the-impacts-of-ai-the-green-transition/",
         },
       ],
     },
@@ -217,13 +217,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "AI and Privacy Concerns - Harvard Business Review",
-          link: "https://www.forbes.com/sites/forbestechcouncil/2023/04/24/what-is-generative-ai-and-how-does-it-work/",
+          link: "https://hbr.org/sponsored/2021/03/is-your-privacy-governance-ready-for-ai",
         },
       ],
       video: [
         {
           text: "AI and Privacy (The Guardian)",
-          link: "https://www.youtube.com/watch?v=QnJdtCm7_gA",
+          link: "https://www.youtube.com/watch?v=zNxw5gJtHLc&pp=ygUPQUkgYW5kIFByaXZhY3kg",
         },
       ],
     },
@@ -238,13 +238,13 @@ export const RESOURCES: Record<string, resource[]> = {
       reading: [
         {
           text: "AI Bias and Fairness - MIT Technology Review",
-          link: "https://www.technologyreview.com/2020/07/22/1005454/ai-bias/",
+          link: "https://www.technologyreview.com/2019/02/04/137602/this-is-how-ai-bias-really-happensand-why-its-so-hard-to-fix/",
         },
       ],
       video: [
         {
           text: "Bias in AI (Vox)",
-          link: "https://www.youtube.com/watch?v=59bMh59JQDo",
+          link: "https://www.youtube.com/watch?v=Hpi6hSV4hpM&ab_channel=DestinLearning",
         },
       ],
     },
