@@ -1,11 +1,10 @@
+import Title from "../title";
+
 const Education = () => {
   return (
-    <div className="flex w-5/6 flex-col">
-      <div className="flex items-center gap-6">
-        <h1 className="my-8 text-left text-6xl">Education</h1>
-        <div className="flex-grow border-2 border-ucr-yellow"></div>
-      </div>
-      <p className="">
+    <div className="flex w-5/6 flex-col px-0 md:w-5/6 md:px-0">
+      <Title title="Education" underline />
+      <p className="mt-2 text-base leading-relaxed md:text-lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
         labore vitae, molestias autem nam officiis numquam quam repudiandae
         pariatur dolorem provident dolorum enim tempora doloribus officia

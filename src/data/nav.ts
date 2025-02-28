@@ -3,10 +3,10 @@ export const ITEMS = [
     name: "EDUCATION",
     href: "/education",
   },
-  {
-    name: "CAREER",
-    href: "/career",
-  },
+  // { omitted
+  //   name: "CAREER",
+  //   href: "/career",
+  // },
   {
     name: "PROJECTS",
     href: "/projects",

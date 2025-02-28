@@ -1,11 +1,11 @@
 import React from "react";
-import Title from "../title";
 
-const External = () => {
+const Education = () => {
   return (
-    <div className="my-4 flex w-11/12 flex-col items-start justify-start bg-white p-3 py-16 md:w-11/12 md:p-0">
-      <Title title="External Resources" underline={false} />
-      <p className="font-inter text-2xl font-normal leading-relaxed">
+    <div className="mb-5 text-left">
+      <h1 className="m-0 text-6xl font-light">Education</h1>
+      <div className="mb-4 h-1 w-[543.01px] border-t-[5px] border-yellow-500"></div>
+      <p className="mt-4 text-xl font-light">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -15,4 +15,4 @@ const External = () => {
   );
 };
 
-export default External;
+export default Education;

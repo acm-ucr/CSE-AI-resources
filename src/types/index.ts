@@ -32,3 +32,21 @@ export interface Course {
   platforms: string[];
   prerequisites: Prerequisite[];
 }
+
+export type TimelineItemType = {
+  title: string;
+  description?: string;
+  time: string;
+};
+
+export type resource = {
+  header: string;
+  description: string[];
+  reading: linkableProps[];
+  video: linkableProps[];
+};
+
+type linkableProps = {
+  text: string;
+  link: string;
+};

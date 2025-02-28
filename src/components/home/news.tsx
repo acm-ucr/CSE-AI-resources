@@ -1,21 +1,19 @@
-import { newsData } from "@/data/news";
 import New from "./new";
+import Title from "../title";
+import { NEWS } from "@/data/news";
 
 const News = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="flex w-11/12 items-center gap-6">
-        <h1 className="my-8 text-left text-6xl">Recent News</h1>
-        <span className="flex-grow border-2 border-ucr-yellow" />
-      </div>
-      <div className="mb-[10vh] grid h-full grid-cols-3 justify-items-center gap-0 p-0">
-        {newsData.map((news, index) => (
+    <div className="p~4 mb-20 ml-auto mr-auto mt-5 w-5/6">
+      <Title title="Recent News" underline />
+      <div className="my-[10vh] grid h-full justify-items-center gap-y-12 p-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {NEWS.map(({ title, text, refLink, image, imageAlt }, index) => (
           <New
-            title={news.title}
-            text={news.text}
-            link={news.refLink}
-            image={news.image}
-            alt={news.imageAlt}
+            title={title}
+            text={text}
+            link={refLink}
+            image={image}
+            alt={imageAlt}
             key={index}
           />
         ))}
