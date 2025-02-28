@@ -1,13 +1,33 @@
-import { Data } from "@/types";
+import { Article } from "@/types";
 
-export const articlesData: Record<string, Data[]> = {
+export const articlesData: Record<string, Article[]> = {
   pytorch: [
-    { id: 1, title: "CIFAR10 Classifier", link: "#" },
-    { id: 2, title: "MNIST", link: "#" },
-    { id: 3, title: "RNN Part 1", link: "#" },
-    { id: 4, title: "RNN Part 2", link: "#" },
-    { id: 5, title: "RNN Part 3", link: "#" },
-    { id: 6, title: "Creating a Neural Network", link: "#" },
+    {
+      title: "CIFAR10 Classifier",
+      link: "https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html?utm_source=chatgpt.com",
+    },
+    { title: "MNIST", link: "#" },
+    {
+      title: "RNN Part 1",
+      link: "https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html",
+    },
+    {
+      title: "RNN Part 2",
+      link: "https://pytorch.org/tutorials/intermediate/char_rnn_generation_tutorial.html",
+    },
+    {
+      title: "RNN Part 3",
+      link: "https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html",
+    },
+    {
+      title: "Creating a Neural Network",
+      link: "https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+    },
   ],
-  kaggle: [{ id: 1, title: "Titanic Problem", link: "#" }],
+  kaggle: [
+    {
+      title: "Titanic Problem",
+      link: "https://www.kaggle.com/competitions/titanic?utm_source=chatgpt.com",
+    },
+  ],
 };

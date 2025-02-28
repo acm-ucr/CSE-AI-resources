@@ -9,13 +9,11 @@ export type News = {
 };
 
 export type Note = {
-  id: number;
   title: string;
   url: string;
 };
 
-export type Data = {
-  id: number;
+export type Article = {
   title: string;
   link: string;
 };

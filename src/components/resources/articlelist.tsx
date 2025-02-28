@@ -1,11 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
-interface Article {
-  id: number;
-  title: string;
-  link: string;
-}
+import { Article } from "@/types";
 
 interface ArticleListProps {
   title: string;
@@ -16,10 +11,10 @@ const ArticleList = ({ title, articles }: ArticleListProps) => (
   <div>
     <h2 className="mb-4 sm:text-lg md:text-xl lg:text-2xl">{title}</h2>
     <ol className="space-y-1">
-      {articles.map(({ id, link, title }, index) => (
+      {articles.map(({ link, title }, index) => (
         <li key={index} className="flex items-baseline">
-          <span className="mr-2 text-ucr-blue sm:text-lg md:text-xl lg:text-2xl">
-            {id}.
+          <span className="mr-2 text-black sm:text-lg md:text-xl lg:text-2xl">
+            {index + 1}.
           </span>
           <Link
             href={link}
