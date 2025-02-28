@@ -1,11 +1,11 @@
 import React from "react";
-import Title from "../title";
 
-const Professionals = () => {
+const Education = () => {
   return (
-    <div className="mt-4 flex w-11/12 flex-col">
-      <Title title=" Technical Professionals" underline />
-      <p className="font-inter mx-auto mt-2 text-base font-normal leading-relaxed md:text-xl lg:text-2xl">
+    <div className="mb-5 text-left">
+      <h1 className="m-0 text-6xl font-light">Education</h1>
+      <div className="mb-4 h-1 w-[543.01px] border-t-[5px] border-yellow-500"></div>
+      <p className="mt-4 text-xl font-light">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -15,4 +15,4 @@ const Professionals = () => {
   );
 };
 
-export default Professionals;
+export default Education;
