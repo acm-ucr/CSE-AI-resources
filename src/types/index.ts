@@ -28,10 +28,10 @@ type Prerequisite = {
 export interface Course {
   header: string;
   description: string;
-  books: string[];
-  platforms: string[];
   prerequisites: Prerequisite[];
-}
+  books: linkableProps[]; 
+  platforms: linkableProps[]; 
+};
 
 export type TimelineItemType = {
   title: string;
