@@ -3,9 +3,9 @@ import Title from "../title";
 
 const External = () => {
   return (
-    <div className="my-4 flex w-11/12 flex-col items-start justify-start bg-white p-3 py-16 md:w-11/12 md:p-0">
+    <div className="flex w-11/12 flex-col items-start justify-start bg-white p-3 md:my-8 md:w-11/12 md:p-0">
       <Title title="External Resources" underline={false} />
-      <p className="font-inter text-2xl font-normal leading-relaxed">
+      <p className="font-inter text-lg font-normal leading-relaxed md:text-xl lg:text-2xl">
         We believe in the power of continuous learning and collaboration. Our
         curated collection of external resources provides access to cutting-edge
         research, industry insights, and AI development tools. Whether you're

@@ -3,7 +3,7 @@ import AIDropdown from "./ai-dropdowns";
 
 const AIDropdowns = () => {
   return (
-    <div className="w-5/6">
+    <div className="w-5/6 md:my-3">
       {Object.keys(RESOURCES).map((level) => (
         <div key={level}>
           <p className="mt-10 bg-ucr-blue bg-opacity-45 p-2 text-4xl font-medium">
