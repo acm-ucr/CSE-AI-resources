@@ -22,6 +22,7 @@ const page = () => {
 
   return (
     <div className="my-10 flex flex-col items-center justify-center gap-8">
+      {/* Projecrs & Research Section */}
       <motion.div
         ref={researchRef}
         initial={{ opacity: 0, y: 20 }}
@@ -31,29 +32,32 @@ const page = () => {
         <Research />
       </motion.div>
 
+      {/* Professional Section */}
       <motion.div
         ref={professionalRef}
         initial={{ opacity: 0, y: 20 }}
         animate={isProfessionalInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
       >
         <Professionals />
       </motion.div>
 
+      {/* Business Section */}
       <motion.div
         ref={businessRef}
         initial={{ opacity: 0, y: 20 }}
         animate={isBusinessInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
       >
         <Business />
       </motion.div>
 
+      {/* Medical Section */}
       <motion.div
         ref={medicalRef}
         initial={{ opacity: 0, y: 20 }}
         animate={isMedicalInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
       >
         <Medical />
       </motion.div>
