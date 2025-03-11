@@ -1,5 +1,5 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import Link from "next/link";
 
 type newsProps = {
@@ -10,20 +10,19 @@ type newsProps = {
   text: string;
 };
 
-const New = ({ image, alt, link, title, text }: newsProps) => {
+const New = ({ link, title, text }: newsProps) => {
   return (
-    <div className="flex w-3/4 flex-col">
-      <div className="flex h-64 items-center justify-center overflow-hidden">
-        <Image
-          src={image}
-          alt={alt}
-          className="h-full w-full rounded-t-2xl object-cover"
-        />
+    <div className="flex w-5/6 flex-col rounded-xl border border-gray-300 bg-white p-5 shadow">
+      <div className="mb-2 w-full border-b-[3px] border-ucr-yellow text-xl font-semibold text-black md:text-3xl">
+        {title}
       </div>
-      <p className="line-clamp-1 pt-4 text-2xl font-bold">
-        <Link href={link}>{title}</Link>
-      </p>
-      <p className="line-clamp-6 pt-2 text-sm">{text}</p>
+      <p className="line-clamp-6 p-0 text-base">{text}</p>
+      <Link
+        href={link}
+        className="bg- mt-2 inline-block w-fit rounded-lg border-2 border-ucr-yellow p-2 text-sm font-semibold text-black transition-all hover:bg-ucr-yellow hover:text-white"
+      >
+        Read More
+      </Link>
     </div>
   );
 };
