@@ -69,7 +69,7 @@ export const TOOLS = {
   ],
   "Recommended Youtube Channels": [
     {
-      text: "ChatGPT",
+      text: "Welch Labs",
       link: "https://www.youtube.com/channel/UConVfxXodg78Tzh5nNu85Ew",
     },
     {

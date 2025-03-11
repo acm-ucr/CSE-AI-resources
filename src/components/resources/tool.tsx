@@ -11,22 +11,19 @@ type ToolProps = {
 
 const Tool = ({ section, title }: ToolProps) => {
   return (
-    <div>
-      <div className="mb-4 sm:text-lg md:text-xl lg:text-2xl">{title}</div>
-      <div className="flex flex-col gap-2">
+    <div className="space-y-6 text-lg md:text-xl lg:text-2xl">
+      <div className="font-semibold">{title}</div>
+      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {section.map(({ link, text }, index) => (
-          <div
-            key={index}
-            className="mr-2 flex gap-2 text-black sm:text-lg md:text-xl lg:text-2xl"
-          >
-            {index + 1}.
-            <Link
-              href={link}
-              className="text-ucr-blue underline transition-colors sm:text-lg md:text-xl lg:text-2xl"
-            >
-              {text}
-            </Link>
-          </div>
+          <Link key={index} href={link} className="block">
+            <div className="rounded-2xl border-2 border-gray-200 bg-white p-4 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <div className="flex items-center gap-3 text-gray-900">
+                <span className="w-full text-center font-medium hover:text-ucr-blue">
+                  {text}
+                </span>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
