@@ -20,7 +20,7 @@ const page = () => {
   const isMedicalInView = useInView(medicalRef, { once: true });
 
   return (
-    <div className="my-10 flex flex-col items-center justify-center gap-8">
+    <div className="my-10 flex w-11/12 flex-col justify-center gap-8">
       <motion.div
         ref={researchRef}
         initial={{ opacity: 0, y: 20 }}
