@@ -11,13 +11,13 @@ const Title = ({
     <>
       {underline ? (
         <div className="flex w-full items-center gap-4 md:gap-6">
-          <h1 className="whitespace-nowrap text-4xl md:text-6xl">{title}</h1>
+          <div className="whitespace-nowrap text-3xl md:text-5xl">{title}</div>
           <div className="flex-grow border-2 border-ucr-yellow" />
         </div>
       ) : (
-        <h1 className="mb-3 border-b-[4px] border-ucr-yellow pb-2 text-4xl text-black md:text-6xl">
+        <div className="mb-3 w-fit border-b-[4px] border-ucr-yellow pb-2 text-3xl text-black md:text-5xl">
           {title}
-        </h1>
+        </div>
       )}
     </>
   );

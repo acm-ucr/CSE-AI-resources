@@ -3,7 +3,7 @@ import Title from "../title";
 
 const Welcome = () => {
   return (
-    <div className="my-4 flex w-5/6 flex-col items-start justify-start bg-white md:w-5/6">
+    <div className="my-10 flex w-5/6 flex-col items-start justify-start rounded-xl p-5 md:w-5/6">
       <Title title="Our Vision" underline={false} />
       <p className="mt-1 text-start text-lg text-black">
         We envision a future where AI education at UCR empowers students and
