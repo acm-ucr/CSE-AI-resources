@@ -1,6 +1,5 @@
 "use client";
 
-import External from "@/components/resources/external";
 import Articles from "@/components/resources/articles";
 import Notes from "@/components/resources/notes";
 import AIDropdowns from "@/components/resources/ai-dropdown";
@@ -10,15 +9,8 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const Page = () => {
-  const sections = [
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-    useRef(null),
-  ];
+  const sections = Array.from({ length: 5 }, () => useRef(null));
   const inViewStates = sections.map((ref) => useInView(ref, { once: true }));
-
   const components = [AIDropdowns, Tools, Articles, Notes, Youtube];
 
   return (

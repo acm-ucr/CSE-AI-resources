@@ -11,7 +11,9 @@ const Title = ({
     <>
       {underline ? (
         <div className="flex w-full items-center gap-4 md:gap-6">
-          <div className="whitespace-nowrap text-3xl md:text-5xl">{title}</div>
+          <div className="whitespace-normal text-3xl md:whitespace-nowrap md:text-5xl">
+            {title}
+          </div>
           <div className="flex-grow border-2 border-ucr-yellow" />
         </div>
       ) : (

@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../title";
 import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
 
 const Research = () => {
   return (
@@ -9,9 +10,9 @@ const Research = () => {
         <Title title="Faculty" underline={false} />
         <Link
           href={"https://raise.ucr.edu/people"}
-          className="font-inter pt-8 text-base font-semibold leading-relaxed hover:text-ucr-blue md:text-lg lg:text-2xl"
+          className="font-inter flex w-fit items-center pt-2 text-base font-normal leading-relaxed hover:text-ucr-blue md:text-lg lg:text-2xl"
         >
-          View more
+          View Faculty <ArrowUpRight size={28} />
         </Link>
         {/* <div className="flex justify-center gap-10">
         <div className="h-24 w-80 bg-ucr-blue/80 md:h-80" />
