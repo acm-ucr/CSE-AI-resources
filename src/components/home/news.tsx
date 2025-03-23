@@ -1,19 +1,8 @@
 import New from "./new";
 import Title from "../title";
 import { NEWS } from "@/data/news";
-// import { useQuery } from "@tanstack/react-query";
-// import { fetchEvents } from "@/data/actions";
 
 const News = () => {
-  //   const { isFetching, isError, data, error } = useQuery({
-  //     queryKey: ["Events"],
-  //     queryFn: fetchEvents,
-  //   });
-  // console.log(isError)
-  // console.log(isFetching)
-  // console.log(error)
-
-  // console.log(data)
   return (
     <div className="my-10 flex w-5/6 flex-col">
       <Title title="Recent News" underline />
