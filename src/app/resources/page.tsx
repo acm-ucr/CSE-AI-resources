@@ -5,6 +5,7 @@ import Articles from "@/components/resources/articles";
 import Notes from "@/components/resources/notes";
 import AIDropdowns from "@/components/resources/ai-dropdown";
 import Tools from "@/components/resources/tools";
+import Youtube from "@/components/resources/youtube";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -18,7 +19,7 @@ const Page = () => {
   ];
   const inViewStates = sections.map((ref) => useInView(ref, { once: true }));
 
-  const components = [AIDropdowns, Tools, Articles, External, Notes];
+  const components = [AIDropdowns, Tools, Articles, Notes, Youtube];
 
   return (
     <div>
