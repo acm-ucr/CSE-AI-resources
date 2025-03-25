@@ -14,7 +14,7 @@ const Page = () => {
   const components = [AIDropdowns, Tools, Articles, Notes, Youtube];
 
   return (
-    <div>
+    <>
       {components.map((Component, index) => (
         <motion.div
           key={index}
@@ -27,7 +27,7 @@ const Page = () => {
           <Component />
         </motion.div>
       ))}
-    </div>
+    </>
   );
 };
 

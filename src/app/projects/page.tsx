@@ -1,6 +1,6 @@
 "use client";
 import Professionals from "@/components/projects/professionals";
-import Research from "@/components/projects/research";
+import Faculty from "@/components/projects/faculty";
 import Medical from "@/components/projects/medical";
 import Business from "@/components/projects/business";
 import { useInView, motion } from "framer-motion";
@@ -9,10 +9,10 @@ import { useRef } from "react";
 const page = () => {
   const sections = Array.from({ length: 4 }, () => useRef(null));
   const inViewStates = sections.map((ref) => useInView(ref, { once: true }));
-  const components = [Research, Professionals, Medical, Business];
+  const components = [Faculty, Professionals, Medical, Business];
 
   return (
-    <div>
+    <>
       {components.map((Component, index) => (
         <motion.div
           key={index}
@@ -25,7 +25,7 @@ const page = () => {
           <Component />
         </motion.div>
       ))}
-    </div>
+    </>
   );
 };
 
