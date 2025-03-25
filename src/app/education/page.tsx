@@ -11,7 +11,7 @@ const page = () => {
   const components = [CourseDropdowns, TimelineLayout];
 
   return (
-    <div>
+    <>
       {components.map((Component, index) => (
         <motion.div
           key={index}
@@ -24,7 +24,7 @@ const page = () => {
           <Component />
         </motion.div>
       ))}
-    </div>
+    </>
   );
 };
 
