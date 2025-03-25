@@ -18,6 +18,7 @@ const ArticleList = ({ title, articles }: ArticleListProps) => (
           </span>
           <Link
             href={link}
+            target="_blank"
             className="text-ucr-blue underline transition-colors sm:text-lg md:text-xl lg:text-2xl"
           >
             {title}
