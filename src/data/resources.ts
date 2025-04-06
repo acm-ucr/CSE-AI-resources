@@ -8,7 +8,6 @@ import genai from "@/public/resources/genai.png";
 import privacy from "@/public/resources/privacy.png";
 import source from "@/public/resources/source.png";
 import type from "@/public/resources/type.png";
-import { timelineData } from "@/data/timeline";
 
 export const RESOURCES: Record<string, resource[]> = {
   "Introduction to AI": [
@@ -34,7 +33,7 @@ export const RESOURCES: Record<string, resource[]> = {
     },
     {
       header: "Brief History of AI",
-      description: timelineData,
+      description: ["json"],
     },
     {
       header: "Real World Applications",

@@ -24,7 +24,7 @@ const AIDropdown = ({ header, image, description }: resource) => {
             </div>
           </AccordionTrigger>
           <AccordionContent className="border-t px-6 pb-6 pt-2">
-            <div className="flex flex-col gap-6 md:flex-row">
+            <div className="flex w-full flex-col gap-6 md:flex-row">
               {image && (
                 <div className="w-full flex-shrink-0 md:w-2/5">
                   <Image
@@ -34,25 +34,23 @@ const AIDropdown = ({ header, image, description }: resource) => {
                   />
                 </div>
               )}
-              <div className="flex w-full flex-col justify-center md:w-3/5">
+              <div className="flex w-full items-center justify-center md:w-3/5">
                 {Array.isArray(description) ? (
-                  <div className="space-y-4 text-base md:text-lg">
-                    {description.map((item, index) => (
-                      <div key={index} className="leading-relaxed">
-                        {item}
-                      </div>
-                    ))}
-                  </div>
+                  description[0] === "json" ? (
+                    <div className="w-full md:-mx-6">
+                      <TimelineLayout data={history} />
+                    </div>
+                  ) : (
+                    <div className="space-y-4 text-base md:text-lg">
+                      {description.map((item, index) => (
+                        <div key={index} className="leading-relaxed">
+                          {typeof item === "string" ? item : null}
+                        </div>
+                      ))}
+                    </div>
+                  )
                 ) : (
-                  <div className="w-full">
-                    {typeof description === "object" ? (
-                      <div className="md:-mx-6">
-                        <TimelineLayout data={history} />
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                  </div>
+                  <div className="text-base">No description available.</div>
                 )}
               </div>
             </div>
