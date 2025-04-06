@@ -9,12 +9,6 @@ export const timelineData: Record<string, TimelineItemType[]> = {
       time: "CS 105",
     },
     {
-      title: "Computer Vision",
-      description:
-        " Covers imaging formation, early vision processing, boundary detection, region growing, two-dimensional and three-dimensional object representation, and recognition techniques.",
-      time: "EE 146",
-    },
-    {
       title: "Intro to Artificial Intelligence",
       description:
         " An introduction to the field of artificial intelligence. Focuses on discretevalued problems. Covers heuristic search, problem representation, and classical planning. Also covers constraint satisfaction and logical inference",
@@ -53,19 +47,13 @@ export const timelineData: Record<string, TimelineItemType[]> = {
       time: "CS 222",
     },
     {
-      title: "Machine Learning & Data Mining",
-      description:
-        "A study of generative and discriminative approaches to machine learning. Topics include probabilistic model fitting, gradient-based loss optimization, regularization, hyper-parameters, and generalization. Includes experience with data science programming environments, data from practice, and performance metrics",
-      time: "CS 224",
-    },
-    {
       title: "Deep Learning",
       description:
         "Explores fundamentals of deep neural networks and their applications in various machine learning tasks. Includes the fundamentals of perception, approximation, neural network architectures, loss functions, and generalization. Addresses optimization methods including backpropagation, automatic differentiation, and regularization. Covers non-standard problems including auto-encoders and probabilistic models. Presents applications in machine learning/computer vision",
       time: "CS 228",
     },
     {
-      title: "Machine Learning & Data Mining",
+      title: "Data Mining",
       description:
         "Provides a broad background in the design and use of data mining algorithms and tools. Includes clustering, classification, association rules mining, time series clustering, and Web mining",
       time: "CS 235",
