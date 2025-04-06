@@ -33,15 +33,16 @@ export interface Course {
 
 export type TimelineItemType = {
   title: string;
-  description?: string;
+  description?: string[];
   time: string;
 };
 
 export type resource = {
   header: string;
+  image: StaticImageData;
   description: string[];
-  reading: linkableProps[];
-  video: linkableProps[];
+  reading?: linkableProps[];
+  video?: linkableProps[];
 };
 
 type linkableProps = {
