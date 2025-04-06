@@ -5,32 +5,54 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { resource } from "@/types";
-import Links from "./links";
+import Image from "next/image";
+import TimelineLayout from "../education/timeline-layout";
+import { history } from "@/data/history";
 
-const AIDropdown = ({ header, description, reading, video }: resource) => {
+const AIDropdown = ({ header, image, description }: resource) => {
   return (
     <div className="py-1">
-      <Accordion type="single" collapsible>
-        <AccordionItem value="resource">
-          <AccordionTrigger className="py-0 hover:no-underline">
-            <div className="m-1 my-4 flex gap-6 text-3xl">{header}</div>
+      <Accordion
+        type="single"
+        collapsible
+        className="overflow-hidden rounded-lg border shadow-sm"
+      >
+        <AccordionItem value="resource" className="border-0">
+          <AccordionTrigger className="px-6 py-4 transition-all duration-200 hover:bg-gray-50 hover:no-underline dark:hover:bg-gray-800">
+            <div className="flex items-center gap-4">
+              <h3 className="text-xl font-medium md:text-2xl">{header}</h3>
+            </div>
           </AccordionTrigger>
-          <AccordionContent>
-            <div className="pb-2 pl-14 text-2xl font-light leading-7">
-              {description.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-              {reading.map(({ text, link }, index) => (
-                <Links
-                  title={"Further Reading"}
-                  text={text}
-                  link={link}
-                  key={index}
-                />
-              ))}
-              {video.map(({ text, link }, index) => (
-                <Links title={"Video"} text={text} link={link} key={index} />
-              ))}
+          <AccordionContent className="border-t px-6 pb-6 pt-2">
+            <div className="flex w-full flex-col gap-6 md:flex-row">
+              {image && (
+                <div className="w-full flex-shrink-0 md:w-2/5">
+                  <Image
+                    src={image}
+                    alt={`${header} visual`}
+                    className="w-full rounded-md object-cover shadow-sm"
+                  />
+                </div>
+              )}
+              <div className="flex w-full items-center justify-center md:w-3/5">
+                {Array.isArray(description) ? (
+                  description[0] === "json" ? (
+                    <div className="w-full md:-mx-6">
+                      <TimelineLayout data={history} />
+                    </div>
+                  ) : (
+                    <div className="space-y-4 text-base md:text-lg">
+                      {description.map((item, index) => (
+                        <div key={index} className="leading-relaxed">
+                          {typeof item === "string" ? item : null}
+                        </div>
+                      ))}
+                    </div>
+                  )
+                ) : (
+                  <div className="text-base">No description available.</div>
+                )}
+              </div>
             </div>
           </AccordionContent>
         </AccordionItem>
