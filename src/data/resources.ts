@@ -1,13 +1,13 @@
 import { resource } from "@/types";
-import affect from "@/public/resources/affect.png";
-import ai from "@/public/resources/ai.png";
-import apps from "@/public/resources/apps.png";
-import bias from "@/public/resources/bias.png";
-import data from "@/public/resources/data.png";
-import genai from "@/public/resources/genai.png";
-import privacy from "@/public/resources/privacy.png";
-import source from "@/public/resources/source.png";
-import type from "@/public/resources/type.png";
+import affect from "@/public/resources/affect.webp";
+import ai from "@/public/resources/ai.webp";
+import apps from "@/public/resources/apps.webp";
+import bias from "@/public/resources/bias.webp";
+import data from "@/public/resources/data.webp";
+import genai from "@/public/resources/genai.webp";
+import privacy from "@/public/resources/privacy.webp";
+import source from "@/public/resources/source.webp";
+import type from "@/public/resources/type.webp";
 import { timelineData } from "@/data/timeline";
 
 export const RESOURCES: Record<string, resource[]> = {
