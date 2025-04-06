@@ -1,9 +1,19 @@
 import { resource } from "@/types";
+import affect from "@/public/resources/affect.webp";
+import ai from "@/public/resources/ai.webp";
+import apps from "@/public/resources/apps.webp";
+import bias from "@/public/resources/bias.webp";
+import data from "@/public/resources/data.webp";
+import genai from "@/public/resources/genai.webp";
+import privacy from "@/public/resources/privacy.webp";
+import source from "@/public/resources/source.webp";
+import type from "@/public/resources/type.webp";
 
 export const RESOURCES: Record<string, resource[]> = {
   "Introduction to AI": [
     {
       header: "What is AI?",
+      image: ai,
       description: [
         "Artificial Intelligence (AI) refers to the ability of machines to perform tasks that typically require human intelligence. These tasks include recognizing speech, making decisions, solving problems, and even generating human-like text or images. AI is a broad discipline encompassing several approaches, from traditional rule-based systems to modern machine learning models.",
         "The core idea of AI is to enable computers to 'think' or 'learn' in a way that mimics human cognition. Some AI systems rely on predefined rules and logic, while others learn from vast amounts of data through statistical methods. AI can be found in everyday applications like Google Search, voice assistants (Siri, Alexa), and recommendation systems on Netflix or Spotify.",
@@ -23,27 +33,11 @@ export const RESOURCES: Record<string, resource[]> = {
     },
     {
       header: "Brief History of AI",
-      description: [
-        "AI has evolved significantly over the past century, marked by several major breakthroughs and setbacks.",
-        "The Birth of AI (1950s-1960s): The origins of AI trace back to Alan Turing, who proposed the famous Turing Test to determine if a machine could exhibit human-like intelligence. In 1956, John McCarthy coined the term 'Artificial Intelligence' at the Dartmouth Conference, setting the stage for early research in symbolic AI. Early AI models were based on rule-based programming, which involved manually coding a set of instructions for the AI to follow.",
-        "AI Winters (1970s-1980s): As AI research advanced, expectations exceeded reality. Funding declined due to the failure of early AI systems to perform complex tasks, leading to multiple AI winters, where research slowed dramatically.",
-        "Resurgence of AI (1990s-Present): The rise of machine learning and deep learning in the 1990s and 2000s brought AI back to the forefront. IBM’s Deep Blue defeated chess champion Garry Kasparov in 1997, and Google’s AlphaGo shocked the world by beating a Go master in 2016. Modern AI relies on neural networks and massive data processing, enabling applications such as autonomous vehicles and natural language processing.",
-      ],
-      reading: [
-        {
-          text: "A Short History of AI - Harvard",
-          link: "https://hbsp.harvard.edu/product/CMR711-PDF-ENG",
-        },
-      ],
-      video: [
-        {
-          text: "History of AI (Oxford Martin School)",
-          link: "https://youtu.be/mSd9nmPM7Vg?si=RRfJ9j2snPT-EL3h",
-        },
-      ],
+      description: ["json"],
     },
     {
       header: "Real World Applications",
+      image: apps,
       description: [
         "AI is revolutionizing multiple industries, reshaping the way humans interact with technology.",
         "Healthcare: AI-powered diagnostic tools analyze medical images, detect diseases, and assist doctors in decision-making. AI-driven drug discovery accelerates the development of new medicines.",
@@ -69,16 +63,14 @@ export const RESOURCES: Record<string, resource[]> = {
   "General AI Concepts": [
     {
       header: "Importance of Data",
+      image: data,
       description: [
-        "AI models depend heavily on data, which serves as their foundation for learning patterns and making predictions. Without high-quality, diverse, and representative data, AI models can be inaccurate, biased, or ineffective.",
-        "Data can be structured (like databases of numerical and categorical values) or unstructured (such as images, videos, and text).",
-        "The quality of data is more important than quantity—poor data can lead to inaccurate predictions, biased outcomes, or even harmful real-world consequences.",
-        "The process of preparing data for AI involves several critical steps:",
-        "Data Collection – Gathering relevant information from sources like sensors, online databases, or manually labeled datasets.",
-        "Data Cleaning – Removing inconsistencies, duplicate values, or incorrect entries that could skew results.",
-        "Data Normalization – Standardizing the range of values so that different attributes contribute fairly to model training.",
-        "Feature Engineering – Selecting the most relevant pieces of data to improve model performance.",
-        "As AI continues to evolve, there is increasing focus on privacy-preserving AI, where techniques like federated learning allow models to be trained without sharing raw data, addressing ethical and security concerns.",
+        "AI models depend heavily on data, which serves as their foundation for learning patterns and making predictions. Without high-quality, diverse, and representative data, AI models can be inaccurate, biased, or ineffective. Data can be structured (like databases of numerical and categorical values) or unstructured (such as images, videos, and text).",
+        "The quality of data is more important than quantity—poor data can lead to inaccurate predictions, biased outcomes, or even harmful real-world consequences. The process of preparing data for AI involves several critical steps:",
+        "1. Data Collection – Gathering relevant information from sources like sensors, online databases, or manually labeled datasets.",
+        "2. Data Cleaning – Removing inconsistencies, duplicate values, or incorrect entries that could skew results.",
+        "3. Data Normalization – Standardizing the range of values so that different attributes contribute fairly to model training.",
+        "4. Feature Engineering – Selecting the most relevant pieces of data to improve model performance.",
       ],
       reading: [
         {
@@ -94,35 +86,12 @@ export const RESOURCES: Record<string, resource[]> = {
       ],
     },
     {
-      header: "Classical AI Algorithms",
-      description: [
-        "Before modern deep learning, AI relied on classical algorithms that used logic-based or statistical techniques to solve problems. Many of these algorithms are still widely used in AI applications today.",
-        "Search Algorithms – Techniques like A* (A-star) algorithm and Dijkstra’s algorithm are used in pathfinding, robotics, and navigation systems (e.g., Google Maps).",
-        "Optimization Algorithms – Algorithms such as Genetic Algorithms (GA) and Simulated Annealing help find the best solutions in complex problems, such as in logistics and game AI.",
-        "Expert Systems – Rule-based AI models that store human knowledge in structured formats to assist in decision-making (e.g., medical diagnosis systems like MYCIN).",
-        "Classical AI approaches laid the foundation for modern machine learning techniques, proving that even without learning from data, AI could still solve complex problems efficiently.",
-      ],
-      reading: [
-        {
-          text: "Artificial Intelligence (AI) Algorithms",
-          link: "https://www.geeksforgeeks.org/ai-algorithms/",
-        },
-      ],
-      video: [
-        {
-          text: "Introduction to AI Algorithms (MIT)",
-          link: "https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/resources/lecture-1-introduction-and-scope/",
-        },
-      ],
-    },
-    {
       header: "Supervised vs Unsupervised",
+      image: type,
       description: [
         "Machine learning models generally fall into two main categories: Supervised Learning and Unsupervised Learning. Each approach has unique advantages and use cases.",
         "Supervised Learning – The model is trained on a dataset that contains both inputs and labeled outputs. This allows the AI to learn a direct mapping between inputs and their correct classifications.",
-        "Examples: Spam detection, medical diagnostics.",
         "Unsupervised Learning – The AI explores data without explicit labels, discovering hidden patterns or groupings.",
-        "Examples: Customer segmentation, anomaly detection.",
         "Semi-supervised Learning – Leverages both labeled and unlabeled data, offering a cost-effective approach where labeling large datasets is expensive or impractical.",
       ],
       reading: [
@@ -140,12 +109,11 @@ export const RESOURCES: Record<string, resource[]> = {
     },
     {
       header: "Generative AI",
+      image: genai,
       description: [
-        "Generative AI (GenAI) is a branch of artificial intelligence that focuses on creating new content—whether it be text, images, audio, or even entire video sequences.",
-        "How Generative AI Works: Generative AI models are based on deep learning architectures, such as transformers, variational autoencoders (VAEs), and generative adversarial networks (GANs).",
-        "Notable Generative AI Models: ChatGPT, DALL·E, Stable Diffusion, Claude, MusicLM.",
-        "Applications: Content creation, visual arts, entertainment & gaming, healthcare, software development.",
-        "Challenges and Ethical Concerns: Deepfakes, intellectual property issues, bias in AI outputs.",
+        "Generative AI (GenAI) is a branch of artificial intelligence that focuses on creating new content—whether it be text, images, audio, or even entire video sequences. Unlike traditional AI models that analyze or predict based on existing data, generative models learn patterns from large datasets and use that knowledge to produce original outputs. These models are built on advanced deep learning architectures, including transformers, variational autoencoders (VAEs), and generative adversarial networks (GANs). Each architecture serves different purposes—transformers are especially effective for language and sequence tasks, VAEs are useful for structured generation like faces, and GANs excel at generating highly realistic images and videos.",
+        "Some of the most notable examples of generative AI include ChatGPT, which generates human-like text responses; DALL·E and Stable Diffusion, which create images from textual descriptions; Claude, which focuses on thoughtful and safe language generation; and MusicLM, which composes music from written prompts. These tools are being widely applied across a variety of industries.",
+        "However, despite its potential, generative AI poses significant challenges. Deepfakes and misinformation are growing concerns as AI-generated media becomes increasingly convincing. Intellectual property issues are emerging as artists and developers question the originality and ownership of AI-created content. Additionally, biases present in training data can lead to biased outputs, raising ethical concerns about fairness and representation. As the technology evolves, addressing these issues will be critical for the responsible use of generative AI.",
       ],
       reading: [
         {
@@ -162,7 +130,7 @@ export const RESOURCES: Record<string, resource[]> = {
     },
     {
       header: "Open source VS Closed source",
-
+      image: source,
       description: [
         "AI development can follow either open-source or closed-source approaches, each with distinct advantages and challenges.",
         "Open-Source AI: Frameworks like TensorFlow, PyTorch, and Hugging Face allow developers worldwide to contribute, improve, and use AI tools for free.",
@@ -186,12 +154,11 @@ export const RESOURCES: Record<string, resource[]> = {
   "Social and Ethical Impact of AI": [
     {
       header: "How AI Effects Jobs and Society",
-
+      image: affect,
       description: [
         "AI is reshaping the job market by automating repetitive and labor-intensive tasks, enhancing productivity and efficiency, but also raising concerns about job displacement and economic inequality.",
         "Industries Affected by AI Automation: Manufacturing, customer service, healthcare.",
-        "AI is also creating new jobs, such as AI ethics officers, machine learning engineers, and AI trainers.",
-        "The key challenge is reskilling workers to adapt to AI-driven roles.",
+        "AI is also creating new jobs, such as AI ethics officers, machine learning engineers, and AI trainers. The key challenge is reskilling workers to adapt to AI-driven roles.",
       ],
       reading: [
         {
@@ -208,11 +175,10 @@ export const RESOURCES: Record<string, resource[]> = {
     },
     {
       header: "Privacy Concerns",
+      image: privacy,
       description: [
         "AI systems rely on vast amounts of personal data, raising concerns about mass surveillance, data misuse, and lack of user consent.",
-        "Generative AI and New Privacy Challenges: Generative AI models can unintentionally leak sensitive or personally identifiable information (PII).",
-        "Regulating AI and Strengthening Data Protection: GDPR, CCPA, and the proposed EU AI Act.",
-        "Privacy-preserving techniques like federated learning and differential privacy.",
+        "Generative AI introduces new privacy challenges, as these models can unintentionally reveal sensitive or personally identifiable information (PII) from the data they were trained on. This has raised concerns about how such data is handled and protected. In response, regulations like GDPR, CCPA, and the proposed EU AI Act aim to strengthen data protection and ensure ethical AI development. To address these concerns, techniques such as federated learning and differential privacy are being developed to help preserve user privacy while still enabling powerful AI systems.",
       ],
       reading: [
         {
@@ -229,11 +195,11 @@ export const RESOURCES: Record<string, resource[]> = {
     },
     {
       header: "Bias and Fairness in AI",
+      image: bias,
       description: [
         "AI systems learn from human-generated data, making them vulnerable to biases that exist in society. AI bias has been documented in areas like hiring, criminal justice, and loan approvals.",
-        "Why Bias in AI is a Problem: Examples include biased hiring algorithms and facial recognition struggles with darker skin tones.",
-        "Mitigating AI bias: Using fairness-aware AI models, diverse training datasets, and bias-detection techniques.",
-        "Ethical AI development requires constant monitoring and regulation.",
+        "These technologies can reflect and even amplify existing societal biases, leading to unfair outcomes in areas like healthcare, education, finance, and beyond. Addressing these concerns involves using diverse and representative training data, applying fairness-aware algorithms, and continuously monitoring AI behavior for unintended discrimination. ",
+        "This is especially important in the age of generative AI and large language models (LLMs), which learn from vast datasets and can unknowingly reproduce harmful stereotypes. Ensuring fairness in AI requires a thoughtful, ongoing commitment to ethical design, testing, and regulation.",
       ],
       reading: [
         {
