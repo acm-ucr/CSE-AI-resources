@@ -73,9 +73,8 @@ const AIDropdown = ({
               </div>
             </div>
 
-            {/* Readings + Practice Platforms (below the text) */}
-            {(reading?.length > 0 || video?.length > 0) && (
-              <div className="grid w-full grid-cols-2 gap-4 mt-6">
+            {(reading && reading?.length > 0 || video && video?.length > 0) && (
+              <div className="mt-6 grid w-full grid-cols-2 gap-4">
                 {reading && reading.length > 0 && (
                   <div>
                     <h4 className="mb-2 font-medium">Readings:</h4>

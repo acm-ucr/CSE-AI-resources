@@ -9,16 +9,18 @@ const AIDropdowns = () => {
           <p className="mt-10 bg-ucr-blue bg-opacity-45 p-2 text-4xl font-medium">
             {level}
           </p>
-          {RESOURCES[level].map(({ header, image, description, reading, video }, index) => (
-            <AIDropdown
-              header={header}
-              image={image}
-              description={description}
-              reading={reading}
-              video={video}
-              key={index}
-            />
-          ))}
+          {RESOURCES[level].map(
+            ({ header, image, description, reading, video }, index) => (
+              <AIDropdown
+                header={header}
+                image={image}
+                description={description}
+                reading={reading}
+                video={video}
+                key={index}
+              />
+            ),
+          )}
         </div>
       ))}
     </div>
