@@ -11,7 +11,7 @@ import { useRef } from "react";
 const Page = () => {
   const sections = Array.from({ length: 5 }, () => useRef(null));
   const inViewStates = sections.map((ref) => useInView(ref, { once: true }));
-  const components = [AIDropdowns, Tools, Articles, Notes, Youtube];
+  const components = [AIDropdowns];
 
   return (
     <>

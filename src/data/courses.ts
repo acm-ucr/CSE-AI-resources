@@ -7,24 +7,8 @@ export const courses: Record<string, Course[]> = {
       description:
         "An introduction to a breadth of topics within AI designed for non-engineering majors.",
       books: [
-        {
-          text: "TBD",
-          link: "TBD",
-        },
-        {
-          text: "TBD",
-          link: "TBD",
-        },
       ],
       platforms: [
-        {
-          text: "TBD",
-          link: "TBD",
-        },
-        {
-          text: "TBD",
-          link: "TBD",
-        },
       ],
       prerequisites: [
         {

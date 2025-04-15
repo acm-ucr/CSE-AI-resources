@@ -10,6 +10,27 @@ import TimelineLayout from "../education/timeline-layout";
 import { history } from "@/data/history";
 import Links from "@/components/resources/links";
 
+// Helper component to render text with bullet points parsed from newlines
+function FormattedText({ text }: { text: string }) {
+  const lines = text.split("\n");
+  return (
+    <div className="leading-relaxed">
+      {lines.map((line, index) => {
+        const trimmedLine = line.trim();
+        if (trimmedLine.startsWith("- ")) {
+          const bulletText = trimmedLine.substring(2);
+          return (
+            <ul key={index} className="ml-5 list-disc">
+              <li>{bulletText}</li>
+            </ul>
+          );
+        }
+        return <p key={index}>{line}</p>;
+      })}
+    </div>
+  );
+}
+
 const AIDropdown = ({
   header,
   image,
@@ -50,11 +71,11 @@ const AIDropdown = ({
                     </div>
                   ) : (
                     <div className="space-y-4 text-base md:text-lg">
-                      {description.map((item, index) => (
-                        <div key={index} className="leading-relaxed">
-                          {typeof item === "string" ? item : null}
-                        </div>
-                      ))}
+                      {description.map((item, index) =>
+                        typeof item === "string" ? (
+                          <FormattedText key={index} text={item} />
+                        ) : null
+                      )}
                     </div>
                   )
                 ) : (
@@ -68,7 +89,7 @@ const AIDropdown = ({
               <div className="mt-6 grid w-full grid-cols-2 gap-4">
                 {reading && reading.length > 0 && (
                   <div>
-                    <h4 className="mb-2 font-medium">Readings:</h4>
+                    <h4 className="mb-2 font-medium">Articles:</h4>
                     <ul className="ml-5 list-disc space-y-2">
                       {reading.map(({ text, link }, index) => (
                         <li key={index}>
@@ -81,7 +102,7 @@ const AIDropdown = ({
 
                 {video && video.length > 0 && (
                   <div>
-                    <h4 className="mb-2 font-medium">Practice Platforms:</h4>
+                    <h4 className="mb-2 font-medium">Videos:</h4>
                     <ul className="ml-5 list-disc space-y-2">
                       {video.map(({ text, link }, index) => (
                         <li key={index}>
