@@ -3,6 +3,12 @@ import { TimelineItemType } from "@/types";
 export const timelineData: Record<string, TimelineItemType[]> = {
   undergraduate: [
     {
+      title: "A Hitchhiker's Guide to Artificial Intelligence",
+      description:
+        "Surveys basic concepts and techniques underpinning modern AI including problem solving, automated reasoning, game AI, vision and language, neural networks, and robotics. Explores history, ethics, use cases, and applications. Introduces basic use of Python for building and using AI but expects no prior experience. Intended for non-engineering majors",
+      time: "CS 042",
+    },
+    {
       title: "Data Analysis Methods",
       description:
         "An introduction to fundamental concepts and methods in data analysis and visualization essential to a variety of data science tasks. Designed to provide preparation for the data science major and for advanced courses in data analysis and applications of data science",
@@ -47,16 +53,34 @@ export const timelineData: Record<string, TimelineItemType[]> = {
       time: "CS 222",
     },
     {
+      title: "Foundations of Machine Learning",
+      description:
+        "A study of generative and discriminative approaches to machine learning. Topics include probabilistic model fitting, gradient-based loss optimization, regularization, hyper-parameters, and generalization. Includes experience with data science programming environments, data from practice, and performance metrics. May be taken Satisfactory (S) or No Credit (NC) with consent of instructor and graduate advisor.",
+      time: "CS 224",
+    },
+    {
       title: "Deep Learning",
       description:
         "Explores fundamentals of deep neural networks and their applications in various machine learning tasks. Includes the fundamentals of perception, approximation, neural network architectures, loss functions, and generalization. Addresses optimization methods including backpropagation, automatic differentiation, and regularization. Covers non-standard problems including auto-encoders and probabilistic models. Presents applications in machine learning/computer vision",
       time: "CS 228",
     },
     {
+      title: "Machine Learning",
+      description:
+        "Explores fundamentals of deep neural networks and their applications in various machine learning tasks. Includes the fundamentals of perception, approximation, neural network architectures, loss functions, and generalization. Addresses optimization methods including backpropagation, automatic differentiation, and regularization. Covers non-standard problems including auto-encoders and probabilistic models. Presents applications in machine learning/computer vision",
+      time: "CS 229",
+    },
+    {
       title: "Data Mining",
       description:
         "Provides a broad background in the design and use of data mining algorithms and tools. Includes clustering, classification, association rules mining, time series clustering, and Web mining",
       time: "CS 235",
+    },
+    {
+      title: "Introduction to Reinforcement Learning",
+      description:
+        "This course introduces key ideas and algorithms of reinforcement learning (RL). Key topics covered include finite Markov Decision Process (MDP), dynamic programming, Monte Carlo methods, temporal-difference learning, policy gradient methods, safety-constrained RL, batch-constrained RL, multi-agent RL, multi-armed bandits, and imitation learning.",
+      time: "CS 258",
     },
   ],
 };

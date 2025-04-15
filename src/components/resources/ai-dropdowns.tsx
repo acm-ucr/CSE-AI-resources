@@ -8,8 +8,15 @@ import { resource } from "@/types";
 import Image from "next/image";
 import TimelineLayout from "../education/timeline-layout";
 import { history } from "@/data/history";
+import Links from "@/components/resources/links";
 
-const AIDropdown = ({ header, image, description }: resource) => {
+const AIDropdown = ({
+  header,
+  image,
+  description,
+  reading,
+  video,
+}: resource) => {
   return (
     <div className="py-1">
       <Accordion
@@ -24,6 +31,7 @@ const AIDropdown = ({ header, image, description }: resource) => {
             </div>
           </AccordionTrigger>
           <AccordionContent className="border-t px-6 pb-6 pt-2">
+            {/* Main content row (Image + Text) */}
             <div className="flex w-full flex-col gap-6 md:flex-row">
               {image && (
                 <div className="w-full flex-shrink-0 md:w-2/5">
@@ -54,6 +62,37 @@ const AIDropdown = ({ header, image, description }: resource) => {
                 )}
               </div>
             </div>
+
+            {((reading && reading?.length > 0) ||
+              (video && video?.length > 0)) && (
+              <div className="mt-6 grid w-full grid-cols-2 gap-4">
+                {reading && reading.length > 0 && (
+                  <div>
+                    <h4 className="mb-2 font-medium">Readings:</h4>
+                    <ul className="ml-5 list-disc space-y-2">
+                      {reading.map(({ text, link }, index) => (
+                        <li key={index}>
+                          <Links title="" text={text} link={link} />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {video && video.length > 0 && (
+                  <div>
+                    <h4 className="mb-2 font-medium">Practice Platforms:</h4>
+                    <ul className="ml-5 list-disc space-y-2">
+                      {video.map(({ text, link }, index) => (
+                        <li key={index}>
+                          <Links title="" text={text} link={link} />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
           </AccordionContent>
         </AccordionItem>
       </Accordion>
