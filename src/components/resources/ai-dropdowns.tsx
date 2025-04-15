@@ -10,16 +10,6 @@ import TimelineLayout from "../education/timeline-layout";
 import { history } from "@/data/history";
 import Links from "@/components/resources/links";
 
-type reading = {
-  text: string;
-  link: string;
-};
-
-type video = {
-  text: string;
-  link: string;
-};
-
 const AIDropdown = ({
   header,
   image,
@@ -73,7 +63,8 @@ const AIDropdown = ({
               </div>
             </div>
 
-            {(reading && reading?.length > 0 || video && video?.length > 0) && (
+            {((reading && reading?.length > 0) ||
+              (video && video?.length > 0)) && (
               <div className="mt-6 grid w-full grid-cols-2 gap-4">
                 {reading && reading.length > 0 && (
                   <div>
