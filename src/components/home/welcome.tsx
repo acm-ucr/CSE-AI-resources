@@ -22,7 +22,7 @@ const Welcome = () => {
         <p className="mt-1 text-start text-lg text-black">
           We aim to build an inclusive space where AI education at UCR is
           accessible to all students, regardless of major or background. Through
-          curated topics, hands-on resources, and UCR course pathways, this site
+          curated topics, hands-on resources, and UCR courses, this site
           bridges curiosity with opportunity, helping students explore the
           growing world of artificial intelligence.
         </p>
