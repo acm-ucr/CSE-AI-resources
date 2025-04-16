@@ -2,14 +2,14 @@ import React from "react";
 import Title from "../title";
 import Link from "next/link";
 import Image from "next/image";
-import Landing from "@/public/welcome.webp";
+import Goal from "@/public/goal.webp";
 
 const Welcome = () => {
   return (
     <div className="my-10 flex w-5/6 flex-col gap-4 rounded-xl p-5 md:w-5/6 md:flex-row">
       <div className="w-full md:w-1/2">
         <Image
-          src={Landing}
+          src={Goal}
           alt="UCR AI Hub Vision"
           width={400}
           height={300}
@@ -22,9 +22,9 @@ const Welcome = () => {
         <p className="mt-1 text-start text-lg text-black">
           We aim to build an inclusive space where AI education at UCR is
           accessible to all students, regardless of major or background. Through
-          curated topics, hands-on resources, and UCR courses, this site
-          bridges curiosity with opportunity, helping students explore the
-          growing world of artificial intelligence.
+          curated topics, hands-on resources, and UCR courses, this site bridges
+          curiosity with opportunity, helping students explore the growing world
+          of artificial intelligence.
         </p>
 
         <div className="mt-4 flex flex-wrap gap-4">
