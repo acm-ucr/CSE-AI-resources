@@ -10,7 +10,7 @@ import { motion, useInView } from "framer-motion";
 const Home = () => {
   const sections = Array.from({ length: 4 }, () => useRef(null));
   const inViewStates = sections.map((ref) => useInView(ref, { once: true }));
-  const components = [Landing, Welcome, About, Education];
+  const components = [Landing, Welcome];
 
   return (
     <div>
