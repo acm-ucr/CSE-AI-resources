@@ -74,7 +74,7 @@ const AIDropdown = ({
                       {description.map((item, index) =>
                         typeof item === "string" ? (
                           <FormattedText key={index} text={item} />
-                        ) : null
+                        ) : null,
                       )}
                     </div>
                   )
