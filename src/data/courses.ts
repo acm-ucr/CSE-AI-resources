@@ -6,10 +6,8 @@ export const courses: Record<string, Course[]> = {
       header: "CS 042: A Hitchhiker's Guide to Artificial Intelligence	",
       description:
         "An introduction to a breadth of topics within AI designed for non-engineering majors.",
-      books: [
-      ],
-      platforms: [
-      ],
+      books: [],
+      platforms: [],
       prerequisites: [
         {
           name: "None",
@@ -174,10 +172,8 @@ export const courses: Record<string, Course[]> = {
       header: "CS 205: Artificial Intelligence",
       description:
         "Examines how knowledge representation, automated reasoning, and common-sense logic enable intelligent systems to reason and act autonomously.",
-      books: [
-      ],
-      platforms: [
-      ],
+      books: [],
+      platforms: [],
       prerequisites: [
         {
           name: "Graduate Standing OR CS 170: Introduction to Artificial Intelligence",
@@ -220,10 +216,8 @@ export const courses: Record<string, Course[]> = {
       header: "CS 224: Foundations of Machine Learning",
       description:
         "Presents core concepts and techniques in probabilistic modeling, optimization, and evaluation essential for building effective machine learning systems.",
-      books: [
-      ],
-      platforms: [
-      ],
+      books: [],
+      platforms: [],
       prerequisites: [
         { name: "CS 100: Software Construction", indent: 0 },
         {
@@ -244,10 +238,8 @@ export const courses: Record<string, Course[]> = {
       header: "CS 228: Deep Learning",
       description:
         "Explores the principles, architectures, and algorithms behind deep neural networks and their practical applications in AI and computer vision.",
-      books: [
-      ],
-      platforms: [
-      ],
+      books: [],
+      platforms: [],
       prerequisites: [
         { name: "CS 170: Introduction to Artificial Intelligence", indent: 0 },
       ],
@@ -256,10 +248,8 @@ export const courses: Record<string, Course[]> = {
       header: "CS 229: Machine Learning",
       description:
         "Covers fundamental methods in neural network design, optimization, and their applications to various machine learning and computer vision challenges.",
-      books: [
-      ],
-      platforms: [
-      ],
+      books: [],
+      platforms: [],
       prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
     },
     {
@@ -272,18 +262,15 @@ export const courses: Record<string, Course[]> = {
           link: "https://www.amazon.com/Data-Mining-Concepts-Techniques-Management/dp/0128117605",
         },
       ],
-      platforms: [
-      ],
+      platforms: [],
       prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
     },
     {
       header: "CS 258: Introduction to Reinforcement Learning",
       description:
         "Offers a foundational understanding of reinforcement learning, covering decision-making processes, dynamic programming, and modern algorithmic strategies.",
-      books: [
-      ],
-      platforms: [
-      ],
+      books: [],
+      platforms: [],
       prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
     },
   ],

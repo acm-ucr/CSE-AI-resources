@@ -202,7 +202,7 @@ export const RESOURCES: Record<string, resource[]> = {
       image: source,
       description: [
         "AI development can take two main paths: open-source or closed-source, each with its own benefits and trade-offs. These approaches affect how AI is built, shared, and used across the world.",
-        "Open-source AI is like a community project. Tools such as TensorFlow, PyTorch, and Hugging Face are shared freely online, allowing people around the globe to use them, learn from them, and build new ideas. This open and collaborative environment helps AI advance quickly and makes it accessible to students, researchers, and startups alike.", 
+        "Open-source AI is like a community project. Tools such as TensorFlow, PyTorch, and Hugging Face are shared freely online, allowing people around the globe to use them, learn from them, and build new ideas. This open and collaborative environment helps AI advance quickly and makes it accessible to students, researchers, and startups alike.",
         "Closed-source AI is developed privately by companies like OpenAI, Google, and DeepMind. Their models—like GPT-4, Gemini, and AlphaFold—are powerful, but the code and data behind them are not shared publicly. This helps keep the technology secure and controlled but limits transparency and outside input.",
         "There are also ethical concerns. Open-source AI supports learning and innovation, but if misused, it could lead to harmful outcomes. Closed-source AI offers more control and safety, but can raise questions about fairness, accountability, and whether the public has enough insight into how these systems make decisions.",
       ],
