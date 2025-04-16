@@ -15,19 +15,36 @@ export const RESOURCES: Record<string, resource[]> = {
       header: "What is AI?",
       image: ai,
       description: [
-        "Artificial Intelligence (AI) refers to the ability of machines to perform tasks that typically require human intelligence. These tasks include recognizing speech, making decisions, solving problems, and even generating human-like text or images. AI is a broad discipline encompassing several approaches, from traditional rule-based systems to modern machine learning models.",
-        "The core idea of AI is to enable computers to 'think' or 'learn' in a way that mimics human cognition. Some AI systems rely on predefined rules and logic, while others learn from vast amounts of data through statistical methods. AI can be found in everyday applications like Google Search, voice assistants (Siri, Alexa), and recommendation systems on Netflix or Spotify.",
+        "Artificial Intelligence (AI) is a branch of computer science focused on building machines and systems that can carry out tasks normally requiring human intelligence. These include understanding speech, identifying images, making decisions, and even creating content like music, art, or writing. What sets AI apart is its ability to learn from data and improve over time, rather than relying only on fixed instructions.",
+        "The core goal of AI is to mimic human thinking. While early AI systems were based on rigid rules and logic, modern AI often uses machine learning—an approach that lets systems learn patterns and make predictions from large datasets. This makes AI more adaptable, accurate, and effective in handling real-world challenges.",
+        "AI plays a role in many parts of everyday life. From using Google Search and receiving Netflix recommendations to talking to assistants like Siri or Alexa, AI powers many tools we rely on. For engineers and technical learners, AI includes a range of methods—from rule-based systems and decision trees to advanced deep learning networks with millions of parameters. For non-engineers, it’s helpful to see AI as a way for computers to 'learn from experience' and assist in fields like healthcare, education, transportation, and entertainment.",
       ],
       reading: [
         {
-          text: "IBM - What is Artificial Intelligence?",
+          text: "Artificial Intelligence - Nvidia",
+          link: "https://www.nvidia.com/en-us/glossary/artificial-intelligence/",
+        },
+        {
+          text: "What is Artificial Intelligence? - IBM",
           link: "https://www.ibm.com/topics/artificial-intelligence",
+        },
+        {
+          text: "Google AI Essentials Course",
+          link: "https://grow.google/ai-essentials/",
         },
       ],
       video: [
         {
-          text: "Artificial Intelligence Explained (TED-Ed)",
-          link: "https://www.youtube.com/watch?v=2ePf9rue1Ao",
+          text: "What Is an AI Anyway? - TED",
+          link: "https://www.youtube.com/watch?v=KKNCiRWd_j0",
+        },
+        {
+          text: "What is AI? - Simplilearn",
+          link: "https://youtu.be/ad79nYk2keg?si=xIoMUVUg1yJgDub1",
+        },
+        {
+          text: "AI, Machine Learning, Deep Learning and Generative AI Explained - IBM",
+          link: "https://youtu.be/qYNweeDHiyU?si=-7wWMU_K2gPR1M2z",
         },
       ],
     },
@@ -40,21 +57,33 @@ export const RESOURCES: Record<string, resource[]> = {
       image: apps,
       description: [
         "AI is revolutionizing multiple industries, reshaping the way humans interact with technology.",
-        "Healthcare: AI-powered diagnostic tools analyze medical images, detect diseases, and assist doctors in decision-making. AI-driven drug discovery accelerates the development of new medicines.",
-        "Finance: AI-powered trading algorithms make high-frequency stock trades, while AI fraud detection systems analyze transactions in real-time to detect suspicious activities.",
-        "Autonomous Vehicles: Self-driving cars from Tesla, Waymo, and other companies rely on AI-powered vision systems to navigate safely. AI in transportation improves efficiency and reduces accidents.",
-        "Creative Fields: AI-generated art, music, and writing (e.g., OpenAI’s DALL·E and ChatGPT) push the boundaries of creativity, aiding human artists in unique ways.",
+        "In healthcare, AI is enhancing diagnostics by analyzing medical images, identifying diseases, and supporting doctors in clinical decisions. It’s also accelerating drug discovery, leading to faster development of new treatments.",
+        "In finance, AI drives high-frequency trading and strengthens fraud detection by monitoring transactions in real time to identify suspicious behavior.",
+        "Autonomous vehicles—from companies like Tesla and Waymo—rely on AI-powered vision systems for safe navigation. These systems boost transportation efficiency and help reduce accidents.",
+        "In the creative world, AI tools like OpenAI’s DALL·E and ChatGPT are revolutionizing art, music, and writing. By extending human creativity, they open up entirely new forms of artistic expression.",
       ],
       reading: [
         {
-          text: "MIT Sloan - AI in the Real World",
+          text: "AI in the Real World - MIT Sloan",
           link: "https://mitsloan.mit.edu/ideas-made-to-matter/topics/artificial-intelligence",
+        },
+        {
+          text: "OpenAI Academy",
+          link: "https://academy.openai.com",
+        },
+        {
+          text: "Real world GenAI use cases - Google",
+          link: "https://cloud.google.com/transform/101-real-world-generative-ai-use-cases-from-industry-leaders",
         },
       ],
       video: [
         {
-          text: "Will AI Be Critical to Your Job and Everyday Life? (IBM)",
+          text: "Will AI Be Critical to Your Job and Everyday Life? - IBM",
           link: "https://www.youtube.com/watch?v=c9LQUI3VMJ8",
+        },
+        {
+          text: "How AI Could Empower Any Business? - Andrew Ng",
+          link: "https://youtu.be/reUZRyXxUs4?si=e-WChBcLTV9erhfD",
         },
       ],
     },
@@ -74,7 +103,15 @@ export const RESOURCES: Record<string, resource[]> = {
       ],
       reading: [
         {
-          text: " AI Needs Data More Than Data Needs AI",
+          text: "What is Big Data? - Google",
+          link: "https://cloud.google.com/learn/what-is-big-data",
+        },
+        {
+          text: "The Importance of Data Quality - HuggingFace",
+          link: "https://huggingface.co/blog/ethics-soc-6",
+        },
+        {
+          text: " AI Needs Data More Than Data Needs AI - Forbes",
           link: "https://www.forbes.com/councils/forbestechcouncil/2023/10/05/ai-needs-data-more-than-data-needs-ai/",
         },
       ],
@@ -83,18 +120,34 @@ export const RESOURCES: Record<string, resource[]> = {
           text: "Big data rules for AI - IBM",
           link: "https://www.youtube.com/watch?v=AtXqpveCWQU",
         },
+        {
+          text: "Big Data in 5 Min - Simplilearn",
+          link: "https://youtu.be/bAyrObl7TYE?si=xbVYAcDzeY8bx11H",
+        },
       ],
     },
     {
       header: "Supervised vs Unsupervised",
       image: type,
       description: [
-        "Machine learning models generally fall into two main categories: Supervised Learning and Unsupervised Learning. Each approach has unique advantages and use cases.",
-        "Supervised Learning – The model is trained on a dataset that contains both inputs and labeled outputs. This allows the AI to learn a direct mapping between inputs and their correct classifications.",
-        "Unsupervised Learning – The AI explores data without explicit labels, discovering hidden patterns or groupings.",
-        "Semi-supervised Learning – Leverages both labeled and unlabeled data, offering a cost-effective approach where labeling large datasets is expensive or impractical.",
+        "Machine learning models are usually grouped into two main types: supervised and unsupervised learning. Each has its own strengths and use cases.",
+        "Supervised Learning:\n- The AI is trained using data that already has correct answers (labels).\n- It's like teaching with flashcards—AI learns to match inputs to the right outputs.\n- Commonly used for tasks like email spam detection or image classification.",
+        "Unsupervised Learning:\n- The AI works with data that has no labels or correct answers.\n- It looks for patterns or groups on its own.\n- Useful for things like customer segmentation or finding similar songs or movies.",
+        "Semi-supervised Learning:\n- A mix of both approaches: some data is labeled, some isn’t.\n- Helps reduce the need for a lot of labeled data, which can be expensive or hard to get.\n- Often used when there’s a small amount of labeled data but lots of unlabeled data available.",
       ],
       reading: [
+        {
+          text: "What is Supervised Learning - Google",
+          link: "https://cloud.google.com/discover/what-is-supervised-learning",
+        },
+        {
+          text: "What is Unsupervised Learning - Google",
+          link: "https://cloud.google.com/discover/what-is-unsupervised-learning",
+        },
+        {
+          text: "Supervised vs. Unsupervised Learning - Google",
+          link: "https://cloud.google.com/discover/what-is-unsupervised-learning",
+        },
         {
           text: "Supervised vs. Unsupervised Learning - IBM",
           link: "https://www.ibm.com/blog/supervised-vs-unsupervised-learning/",
@@ -105,20 +158,32 @@ export const RESOURCES: Record<string, resource[]> = {
           text: "Supervised vs. Unsupervised Learning - IBM",
           link: "https://www.youtube.com/watch?v=W01tIRP_Rqs",
         },
+        {
+          text: "Neural Networks Series - 3B1B",
+          link: "https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+        },
+        {
+          text: "Supervised & Unsupervised Machine Learning - Steve Brunton",
+          link: "https://youtu.be/wvODQqb3D_8?si=K5HCXr8hloU4jALQ",
+        },
       ],
     },
     {
       header: "Generative AI",
       image: genai,
       description: [
-        "Generative AI (GenAI) is a branch of artificial intelligence that focuses on creating new content—whether it be text, images, audio, or even entire video sequences. Unlike traditional AI models that analyze or predict based on existing data, generative models learn patterns from large datasets and use that knowledge to produce original outputs. These models are built on advanced deep learning architectures, including transformers, variational autoencoders (VAEs), and generative adversarial networks (GANs). Each architecture serves different purposes—transformers are especially effective for language and sequence tasks, VAEs are useful for structured generation like faces, and GANs excel at generating highly realistic images and videos.",
-        "Some of the most notable examples of generative AI include ChatGPT, which generates human-like text responses; DALL·E and Stable Diffusion, which create images from textual descriptions; Claude, which focuses on thoughtful and safe language generation; and MusicLM, which composes music from written prompts. These tools are being widely applied across a variety of industries.",
-        "However, despite its potential, generative AI poses significant challenges. Deepfakes and misinformation are growing concerns as AI-generated media becomes increasingly convincing. Intellectual property issues are emerging as artists and developers question the originality and ownership of AI-created content. Additionally, biases present in training data can lead to biased outputs, raising ethical concerns about fairness and representation. As the technology evolves, addressing these issues will be critical for the responsible use of generative AI.",
+        "Generative AI is a type of artificial intelligence that creates new content—like text, images, music, or video. It learns patterns from large amounts of data and uses that knowledge to produce original results. Common techniques include transformers (great for language), VAEs (used for structured content like faces), and GANs (best for realistic images and videos).",
+        "Popular generative AI tools include ChatGPT for writing and conversation, DALL·E and Stable Diffusion for turning text into images, Claude for safe and thoughtful responses, and MusicLM for generating music from written prompts. These tools are being used in fields like art, business, and entertainment.",
+        "Generative AI also comes with challenges. Deepfakes and misinformation are concerns as fake media becomes harder to detect. There are also questions about ownership and copyright, and biases in training data can lead to unfair results. Responsible use is key as the technology continues to grow.",
       ],
       reading: [
         {
           text: "What is Generative AI? - NVIDIA",
           link: "https://www.nvidia.com/en-us/glossary/generative-ai/",
+        },
+        {
+          text: "Generative Models - OpenAI",
+          link: "https://openai.com/index/generative-models/ ",
         },
       ],
       video: [
@@ -126,18 +191,26 @@ export const RESOURCES: Record<string, resource[]> = {
           text: "How Generative AI Works (MIT)",
           link: "https://www.youtube.com/watch?v=D-pLXkS21fM",
         },
+        {
+          text: "Let's build GPT - Andrej Karpathy",
+          link: "https://youtu.be/kCc8FmEb1nY?si=J3TBggo7p_Q5HR8S",
+        },
       ],
     },
     {
       header: "Open source VS Closed source",
       image: source,
       description: [
-        "AI development can follow either open-source or closed-source approaches, each with distinct advantages and challenges.",
-        "Open-Source AI: Frameworks like TensorFlow, PyTorch, and Hugging Face allow developers worldwide to contribute, improve, and use AI tools for free.",
-        "Closed-Source AI: Proprietary AI models like OpenAI’s GPT-4, Google Gemini, and DeepMind’s AlphaFold have source code and training data kept private.",
-        "Ethical Considerations: Open-source AI fosters innovation but may be used maliciously, while closed-source AI ensures controlled deployment but limits transparency.",
+        "AI development can take two main paths: open-source or closed-source, each with its own benefits and trade-offs. These approaches affect how AI is built, shared, and used across the world.",
+        "Open-source AI is like a community project. Tools such as TensorFlow, PyTorch, and Hugging Face are shared freely online, allowing people around the globe to use them, learn from them, and build new ideas. This open and collaborative environment helps AI advance quickly and makes it accessible to students, researchers, and startups alike.", 
+        "Closed-source AI is developed privately by companies like OpenAI, Google, and DeepMind. Their models—like GPT-4, Gemini, and AlphaFold—are powerful, but the code and data behind them are not shared publicly. This helps keep the technology secure and controlled but limits transparency and outside input.",
+        "There are also ethical concerns. Open-source AI supports learning and innovation, but if misused, it could lead to harmful outcomes. Closed-source AI offers more control and safety, but can raise questions about fairness, accountability, and whether the public has enough insight into how these systems make decisions.",
       ],
       reading: [
+        {
+          text: "Why open source is critical to the future of AI - RedHat",
+          link: "https://www.redhat.com/en/blog/why-open-source-critical-future-ai#",
+        },
         {
           text: "Open vs Closed Source AI - Medium",
           link: "https://medium.com/%40paul.ekwere/open-source-vs-closed-source-ai-foundation-models-fd6829864fa5",
@@ -156,20 +229,33 @@ export const RESOURCES: Record<string, resource[]> = {
       header: "How AI Effects Jobs and Society",
       image: affect,
       description: [
-        "AI is reshaping the job market by automating repetitive and labor-intensive tasks, enhancing productivity and efficiency, but also raising concerns about job displacement and economic inequality.",
-        "Industries Affected by AI Automation: Manufacturing, customer service, healthcare.",
-        "AI is also creating new jobs, such as AI ethics officers, machine learning engineers, and AI trainers. The key challenge is reskilling workers to adapt to AI-driven roles.",
+        "AI is transforming the job market by taking over repetitive, time-consuming tasks. This boosts productivity and efficiency but also raises concerns about job loss and growing inequality.",
+        "Industries most affected by AI automation include:\n- Manufacturing: Automation in factories and production lines.\n- Customer service: Chatbots and AI agents handling routine inquiries.\n- Healthcare: AI tools assisting with diagnostics, scheduling, and patient records.",
+        "At the same time, AI is creating new career opportunities, such as:\n- AI ethics officers: Ensuring responsible and fair use of AI.\n- Machine learning engineers: Building and improving AI systems.\n- AI trainers: Teaching AI systems how to understand human input.",
+        "The key challenge is reskilling workers to adapt to these new AI-driven roles and ensuring no one is left behind in the transition.",
       ],
       reading: [
         {
           text: "AI and the Future of Work - World Economic Forum",
           link: "https://www.weforum.org/stories/2024/02/artificial-intelligence-ai-jobs-future/",
         },
+        {
+          text: "Claude AI for Work - Anthropic",
+          link: "https://www.anthropic.com/learn/claude-for-work",
+        },
+        {
+          text: "The Enviormental Impacts of AI - HuggingFace",
+          link: "https://huggingface.co/blog/sasha/ai-environment-primer",
+        },
       ],
       video: [
         {
-          text: " How AI is Changing Jobs (PBS)",
+          text: "How AI Could Save (Not Destroy) Education - Sal Khan",
           link: "https://www.pbs.org/video/future-jobs-impacts-ai-green-transition-f7borm/",
+        },
+        {
+          text: "How AI is Changing Jobs - PBS",
+          link: "https://youtu.be/hJP5GqnTrNo?si=4JCnKKYiYAqCs4fr",
         },
       ],
     },
@@ -177,13 +263,19 @@ export const RESOURCES: Record<string, resource[]> = {
       header: "Privacy Concerns",
       image: privacy,
       description: [
-        "AI systems rely on vast amounts of personal data, raising concerns about mass surveillance, data misuse, and lack of user consent.",
-        "Generative AI introduces new privacy challenges, as these models can unintentionally reveal sensitive or personally identifiable information (PII) from the data they were trained on. This has raised concerns about how such data is handled and protected. In response, regulations like GDPR, CCPA, and the proposed EU AI Act aim to strengthen data protection and ensure ethical AI development. To address these concerns, techniques such as federated learning and differential privacy are being developed to help preserve user privacy while still enabling powerful AI systems.",
+        "AI systems often rely on large amounts of personal data to function effectively. This raises major privacy concerns, including the risk of:\n- Mass surveillance\n- Data misuse\n- Lack of user consent",
+        "Generative AI adds new privacy risks because it can accidentally reveal private or sensitive information from the data it was trained on. This includes things like names, addresses, or other personally identifiable information (PII).",
+        "To help protect users, new regulations like GDPR (Europe), CCPA (California), and the proposed EU AI Act are being introduced. These aim to strengthen data protection and promote ethical use of AI.",
+        "To improve privacy while still using powerful AI, researchers are exploring safer methods such as:\n- Federated learning: A technique where AI models are trained across multiple devices or servers locally, so raw personal data never leaves the user's device.\n- Differential privacy: Adds randomness to the data or model outputs to protect individual identities while still learning useful patterns.",
       ],
       reading: [
         {
           text: "AI and Privacy Concerns - Harvard Business Review",
           link: "https://www.library.hbs.edu/working-knowledge/navigating-consumer-data-privacy-in-an-ai-world",
+        },
+        {
+          text: "Designing for privacy in an AI world - Google",
+          link: "https://blog.google/technology/safety-security/designing-for-privacy-in-an-ai-world/",
         },
       ],
       video: [

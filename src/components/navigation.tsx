@@ -24,7 +24,7 @@ const Navigation = () => {
             <Image src={Logo} alt="UCR Logo" className="w-14 md:w-24" />
           </Link>
           <p className="font-extralight text-ucr-yellow lg:text-5xl">|</p>
-          <span className="hidden w-full md:inline">Learn AI</span>
+          <span className="hidden w-full md:inline">UCR AI Hub</span>
         </div>
 
         <div className="hidden items-center space-x-7 text-xl md:flex lg:text-2xl">

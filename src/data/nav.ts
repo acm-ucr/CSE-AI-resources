@@ -4,8 +4,8 @@ export const ITEMS = [
     href: "/education",
   },
   {
-    name: "PROJECTS",
-    href: "/projects",
+    name: "FACULTY",
+    href: "https://raise.ucr.edu/people",
   },
   {
     name: "RESOURCES",
