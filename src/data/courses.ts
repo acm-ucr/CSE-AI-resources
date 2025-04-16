@@ -113,7 +113,10 @@ export const courses: Record<string, Course[]> = {
       prerequisites: [
         { name: "CS 100: Software Construction", indent: 0 },
         { name: "MATH 031: Linear Algebra", indent: 0 },
-        { name: "STAT 155: Probability and Statistics for Science and Engineering", indent: 0 },
+        {
+          name: "STAT 155: Probability and Statistics for Science and Engineering",
+          indent: 0,
+        },
       ],
     },
     {
@@ -143,7 +146,10 @@ export const courses: Record<string, Course[]> = {
       prerequisites: [
         { name: "CS 100: Software Construction", indent: 0 },
         { name: "CS 111: Discrete Structures", indent: 0 },
-        { name: "STAT 155: Probability and Statistics for Science and Engineering", indent: 0 },
+        {
+          name: "STAT 155: Probability and Statistics for Science and Engineering",
+          indent: 0,
+        },
       ],
     },
     {
@@ -170,7 +176,9 @@ export const courses: Record<string, Course[]> = {
           link: "https://www.kaggle.com/tags/nlp",
         },
       ],
-      prerequisites: [{ name: "CS 150: Automata and Formal Languages", indent: 0 }],
+      prerequisites: [
+        { name: "CS 150: Automata and Formal Languages", indent: 0 },
+      ],
     },
   ],
   "Graduate Classes for AI": [
@@ -225,9 +233,15 @@ export const courses: Record<string, Course[]> = {
       books: [],
       platforms: [],
       prerequisites: [
-        { name: "Graduate Standing OR CS 100: Software Construction", indent: 0 },
+        {
+          name: "Graduate Standing OR CS 100: Software Construction",
+          indent: 0,
+        },
         { name: "Graduate Standing OR MATH 031: Linear Algebra", indent: 0 },
-        { name: "Graduate Standing OR STAT 155: Probability and Statistics for Science and Engineering", indent: 0 },
+        {
+          name: "Graduate Standing OR STAT 155: Probability and Statistics for Science and Engineering",
+          indent: 0,
+        },
       ],
     },
     {
@@ -237,7 +251,10 @@ export const courses: Record<string, Course[]> = {
       books: [],
       platforms: [],
       prerequisites: [
-        { name: "CS 224: Fundamentals of Machine Learning OR CS 171: Introduction to Machine Learning and Data Mining", indent: 0 },
+        {
+          name: "CS 224: Fundamentals of Machine Learning OR CS 171: Introduction to Machine Learning and Data Mining",
+          indent: 0,
+        },
       ],
     },
     {
@@ -247,7 +264,10 @@ export const courses: Record<string, Course[]> = {
       books: [],
       platforms: [],
       prerequisites: [
-        { name: "CS 224: Fundamentals of Machine Learning OR CS 171: Introduction to Machine Learning and Data Mining", indent: 0 },
+        {
+          name: "CS 224: Fundamentals of Machine Learning OR CS 171: Introduction to Machine Learning and Data Mining",
+          indent: 0,
+        },
       ],
     },
     {
@@ -261,7 +281,12 @@ export const courses: Record<string, Course[]> = {
         },
       ],
       platforms: [],
-      prerequisites: [{ name: "CS 141: Intermediate Data Structures and Algorithms", indent: 0 }],
+      prerequisites: [
+        {
+          name: "CS 141: Intermediate Data Structures and Algorithms",
+          indent: 0,
+        },
+      ],
     },
     {
       header: "CS 258: Introduction to Reinforcement Learning",
@@ -270,7 +295,10 @@ export const courses: Record<string, Course[]> = {
       books: [],
       platforms: [],
       prerequisites: [
-        { name: "CS 224: Fundamentals of Machine Learning OR CS 228: Deep Learning", indent: 0 },
+        {
+          name: "CS 224: Fundamentals of Machine Learning OR CS 228: Deep Learning",
+          indent: 0,
+        },
       ],
     },
   ],

@@ -1,7 +1,5 @@
 "use client";
 
-import About from "@/components/home/about";
-import Education from "@/components/home/education";
 import Landing from "@/components/home/landing";
 import Welcome from "@/components/home/welcome";
 import { useRef } from "react";
