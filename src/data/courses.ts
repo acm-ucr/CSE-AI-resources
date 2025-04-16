@@ -41,7 +41,7 @@ export const courses: Record<string, Course[]> = {
       ],
       prerequisites: [
         {
-          name: "CS 009B: Data-Oriented Introduction to Computing II (Python)",
+          name: "CS 009B: Data-Oriented Introduction to Computing II (Python) OR CS 010B: Introduction to CS for Science, Mathematics, and Engineering II (C++)",
           indent: 0,
         },
       ],
@@ -111,7 +111,9 @@ export const courses: Record<string, Course[]> = {
         },
       ],
       prerequisites: [
-        { name: "CS 170: Introduction to Artificial Intelligence", indent: 0 },
+        { name: "CS 100: Software Construction", indent: 0 },
+        { name: "MATH 031: Linear Algebra", indent: 0 },
+        { name: "STAT 155: Probability and Statistics for Science and Engineering", indent: 0 },
       ],
     },
     {
@@ -138,7 +140,11 @@ export const courses: Record<string, Course[]> = {
           link: "https://github.com/allenai/ir_datasets",
         },
       ],
-      prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
+      prerequisites: [
+        { name: "CS 100: Software Construction", indent: 0 },
+        { name: "CS 111: Discrete Structures", indent: 0 },
+        { name: "STAT 155: Probability and Statistics for Science and Engineering", indent: 0 },
+      ],
     },
     {
       header: "CS 173: Introduction to Natural Language Processing (NLP)",
@@ -164,7 +170,7 @@ export const courses: Record<string, Course[]> = {
           link: "https://www.kaggle.com/tags/nlp",
         },
       ],
-      prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
+      prerequisites: [{ name: "CS 150: Automata and Formal Languages", indent: 0 }],
     },
   ],
   "Graduate Classes for AI": [
@@ -219,19 +225,9 @@ export const courses: Record<string, Course[]> = {
       books: [],
       platforms: [],
       prerequisites: [
-        { name: "CS 100: Software Construction", indent: 0 },
-        {
-          name: "CS 010C: Introduction to Data Structures and Algorithms",
-          indent: 1,
-        },
-        {
-          name: "CS 010B: Introduction to Computer Science II",
-          indent: 2,
-        },
-        {
-          name: "CS 010A: Introduction to Computer Science I",
-          indent: 2,
-        },
+        { name: "Graduate Standing OR CS 100: Software Construction", indent: 0 },
+        { name: "Graduate Standing OR MATH 031: Linear Algebra", indent: 0 },
+        { name: "Graduate Standing OR STAT 155: Probability and Statistics for Science and Engineering", indent: 0 },
       ],
     },
     {
@@ -241,7 +237,7 @@ export const courses: Record<string, Course[]> = {
       books: [],
       platforms: [],
       prerequisites: [
-        { name: "CS 170: Introduction to Artificial Intelligence", indent: 0 },
+        { name: "CS 224: Fundamentals of Machine Learning OR CS 171: Introduction to Machine Learning and Data Mining", indent: 0 },
       ],
     },
     {
@@ -250,7 +246,9 @@ export const courses: Record<string, Course[]> = {
         "Covers fundamental methods in neural network design, optimization, and their applications to various machine learning and computer vision challenges.",
       books: [],
       platforms: [],
-      prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
+      prerequisites: [
+        { name: "CS 224: Fundamentals of Machine Learning OR CS 171: Introduction to Machine Learning and Data Mining", indent: 0 },
+      ],
     },
     {
       header: "CS 235: Data Mining",
@@ -263,7 +261,7 @@ export const courses: Record<string, Course[]> = {
         },
       ],
       platforms: [],
-      prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
+      prerequisites: [{ name: "CS 141: Intermediate Data Structures and Algorithms", indent: 0 }],
     },
     {
       header: "CS 258: Introduction to Reinforcement Learning",
@@ -271,7 +269,9 @@ export const courses: Record<string, Course[]> = {
         "Offers a foundational understanding of reinforcement learning, covering decision-making processes, dynamic programming, and modern algorithmic strategies.",
       books: [],
       platforms: [],
-      prerequisites: [{ name: "CS 100: Software Construction", indent: 0 }],
+      prerequisites: [
+        { name: "CS 224: Fundamentals of Machine Learning OR CS 228: Deep Learning", indent: 0 },
+      ],
     },
   ],
 };
