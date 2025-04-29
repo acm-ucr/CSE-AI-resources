@@ -112,6 +112,7 @@ export const courses: Record<string, Course[]> = {
       ],
       prerequisites: [
         { name: "CS 100: Software Construction", indent: 0 },
+        { name: "MATH 010A: Multi-Variable Calculus", indent: 0 },
         { name: "MATH 031: Linear Algebra", indent: 0 },
         {
           name: "STAT 155: Probability and Statistics for Science and Engineering",
