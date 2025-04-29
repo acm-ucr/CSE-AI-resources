@@ -49,3 +49,9 @@ type linkableProps = {
   text: string;
   link: string;
 };
+
+export type MajorProps = {
+  header: string;
+  description: string;
+  links: linkableProps[];
+};

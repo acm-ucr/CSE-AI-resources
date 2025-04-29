@@ -6,7 +6,7 @@ import Goal from "@/public/goal.webp";
 
 const Welcome = () => {
   return (
-    <div className="my-10 flex w-5/6 flex-col gap-4 rounded-xl p-5 md:w-5/6 md:flex-row">
+    <div className="my-10 flex w-5/6 flex-col gap-4 rounded-xl p-5 md:w-5/6 md:flex-row md:gap-10">
       <div className="w-full md:w-1/2">
         <Image
           src={Goal}
