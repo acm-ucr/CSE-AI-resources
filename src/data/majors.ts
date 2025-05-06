@@ -1,7 +1,7 @@
 import { MajorProps } from "@/types";
 
 export const MAJORS: Record<string, MajorProps[]> = {
-  "Majors Related to AI": [
+  Undergraduate: [
     {
       header: "Computer Science (CS)",
       description:
@@ -46,6 +46,8 @@ export const MAJORS: Record<string, MajorProps[]> = {
         },
       ],
     },
+  ],
+  Graduate: [
     {
       header: "MS in Computer Science (MSCS)",
       description:
