@@ -51,7 +51,7 @@ const AIDropdown = ({
               <h3 className="text-xl font-medium md:text-2xl">{header}</h3>
             </div>
           </AccordionTrigger>
-          <AccordionContent className="border-t px-6 pb-6 pt-2">
+          <AccordionContent className="w-full border-t px-6 pb-6 pt-2">
             {/* Main content row (Image + Text) */}
             <div className="flex w-full flex-col gap-6 md:flex-row">
               {image && (
@@ -63,10 +63,10 @@ const AIDropdown = ({
                   />
                 </div>
               )}
-              <div className="flex w-full items-center justify-center md:w-3/5">
+              <div className="flex w-full items-center justify-center md:w-11/12">
                 {Array.isArray(description) ? (
                   description[0] === "json" ? (
-                    <div className="w-full md:-mx-6">
+                    <div className="flex w-full justify-center md:mx-6">
                       <TimelineLayout data={history} />
                     </div>
                   ) : (

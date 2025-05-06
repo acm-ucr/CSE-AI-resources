@@ -154,7 +154,7 @@ export const courses: Record<string, Course[]> = {
       ],
     },
     {
-      header: "CS 173: Introduction to Natural Language Processing (NLP)",
+      header: "CS 173: Introduction to Natural Language Processing",
       description:
         "Explores computational techniques for processing and understanding human language, covering syntax, semantics, and applications in NLP.",
       books: [

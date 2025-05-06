@@ -1,9 +1,11 @@
+import Background from "@/components/background";
 import Majors from "@/components/majors";
 import React from "react";
 
 const page = () => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
+      <Background />
       <Majors />
     </div>
   );

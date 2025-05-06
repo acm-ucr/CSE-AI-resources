@@ -55,3 +55,9 @@ export type MajorProps = {
   description: string;
   links: linkableProps[];
 };
+
+export type LabList = {
+  header: string;
+  description: string;
+  links: linkableProps[];
+}

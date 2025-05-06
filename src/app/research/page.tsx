@@ -1,15 +1,15 @@
 "use client";
 
-import { TimelineLayout } from "@/components/education/timeline-layout";
-import CourseDropdowns from "@/components/education/course-dropdowns";
+import AIDropdowns from "@/components/research/research";
 import Background from "@/components/background";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Research from "@/components/research/research";
 
-const page = () => {
-  const sections = Array.from({ length: 3 }, () => useRef(null));
+const Page = () => {
+  const sections = Array.from({ length: 2 }, () => useRef(null));
   const inViewStates = sections.map((ref) => useInView(ref, { once: true }));
-  const components = [Background, CourseDropdowns, TimelineLayout];
+  const components = [Background, Research];
 
   return (
     <>
@@ -29,4 +29,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

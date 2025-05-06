@@ -15,6 +15,11 @@ export const ITEMS = [
     target: "_self",
   },
   {
+    name: "RESEARCH",
+    href: "/research",
+    target: "_self",
+  },
+  {
     name: "RESOURCES",
     href: "/resources",
     target: "_self",

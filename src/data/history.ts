@@ -1,38 +1,47 @@
 import { TimelineItemType } from "@/types";
 
 export const history: Record<string, TimelineItemType[]> = {
-  "": [
+"": [
     {
       title: "The Birth of AI",
       description: [
-        "1950: Alan Turing introduces the Turing Test to assess machine intelligence.",
-        "1956: John McCarthy coins the term Artificial Intelligence at the Dartmouth Conference.",
+        "1950: Alan Turing publishes 'Computing Machinery and Intelligence', proposing the Turing Test to evaluate a machine's ability to exhibit intelligent behavior.",
+        "1956: The Dartmouth Summer Research Project on Artificial Intelligence, organized by John McCarthy, Marvin Minsky, Claude Shannon, and Nathan Rochester, marks the official birth of AI as a field. The term 'Artificial Intelligence' is coined.",
       ],
       time: "1950s",
     },
     {
-      title: "Struggles and Discoveres",
+      title: "Struggles and Discoveries",
       description: [
-        "1957: Frank Rosenblatt develops the Perceptron, the first algorithm intended to model a simplified neural network.",
-        "Early AI focused on symbolic reasoning and rule-based systems, with limited adaptability.",
+        "1957: Frank Rosenblatt invents the Perceptron, an early neural network model capable of learning simple patterns, and widely believed to be the future of AI.",
+        "1958-1969: AI research largely focuses on symbolic reasoning and rule-based expert systems showing success on toy problems but failed to generalize.",
+        "1969: Minsky and Papert publish 'Perceptrons', highlighting the limitations of single-layer neural networks and dampening enthusiasm for connectionist models.",
       ],
       time: "1960s",
     },
     {
-      title: "Foundations Laid",
+      title: "Setbacks and Skepticism",
       description: [
-        "AI faces setbacks as symbolic systems fail to scale—leading to the AI Winters (mid-1970s and late 1980s) due to overhyped promises and underdelivered results.",
-        "1986: Rumelhart, Hinton, and Williams reintroduce Backpropagation, revolutionizing the training of multi-layer neural networks.",
-        "Foundations laid for modern deep learning, but limited by computational resources and data.",
+        "1970s: AI progress slows due to a mismatch between ambitious promises and real-world performance. Funding agencies reduce support—marking the first AI Winter.",
+        "Symbolic systems struggle with real-world uncertainty, leading to doubts about AI's feasibility.",
       ],
       time: "1970s",
     },
     {
+      title: "Revival and Expert Systems",
+      description: [
+        "1980: The rise of 'expert systems' like XCON (used by Digital Equipment Corporation) revives commercial interest in AI. These systems encode human expert knowledge as rules.",
+        "1986: Rumelhart, Hinton, and Williams popularize the backpropagation algorithm, enabling effective training of multi-layer neural networks and renewing interest in connectionism.",
+        "1987–1989: The second AI Winter begins due to limitations of expert systems (high maintenance, brittle rules) and the high cost of specialized AI hardware.",
+      ],
+      time: "1980s",
+    },
+    {
       title: "Neural Networks Resurface",
       description: [
-        "1989: Yann LeCun develops the first Convolutional Neural Network (CNN)—LeNet-5—for digit recognition (used in zip code reading).",
-        "Focus on machine learning and data-driven methods grows.",
-        "1997: IBM’s Deep Blue defeats world chess champion Garry Kasparov, showing the power of domain-specific AI.",
+        "1989: Yann LeCun introduces the first Convolutional Neural Network (CNN), LeNet-5, which successfully performs digit recognition and inspires future vision systems.",
+        "1990s: A shift toward statistical learning methods begins, paving the way for support vector machines and probabilistic models.",
+        "1997: IBM’s Deep Blue defeats chess grandmaster Garry Kasparov, showcasing the strength of brute-force search and domain-specific AI systems.",
       ],
       time: "1990s",
     },
@@ -61,7 +70,7 @@ export const history: Record<string, TimelineItemType[]> = {
         "Key breakthroughs like AlphaGo and the Transformer model pave the way for smarter language systems.",
         "Deep learning powers everyday tools such as virtual assistants, search engines, and recommendations.",
       ],
-      time: "2010s",
+      time: "2015s",
     },
     {
       title: "Generative AI Boom",

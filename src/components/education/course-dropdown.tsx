@@ -51,45 +51,47 @@ const CourseDropdown = ({
             <p className="mb-6 mt-4 text-lg font-light italic text-gray-600 dark:text-gray-300">
               {description}
             </p>
-            <div className="mb-6">
-              <h3 className="mb-3 flex items-center text-lg font-semibold md:text-xl">
-                <span className="mr-2 h-6 w-1 rounded bg-ucr-blue/70" />
-                Resources
-              </h3>
+            {books.length > 0 || platforms.length > 0 && (
+              <div className="mb-6">
+                <h3 className="mb-3 flex items-center text-lg font-semibold md:text-xl">
+                  <span className="mr-2 h-6 w-1 rounded bg-ucr-blue/70" />
+                  Resources
+                </h3>
 
-              <div className="ml-4 space-y-4">
-                <p className="text-base">
-                  Course Materials: Provided by UCR instructors (lecture slides,
-                  notes).
-                </p>
+                  <div className="ml-4 space-y-4">
+                    <p className="text-base">
+                      Course Materials: Provided by UCR instructors (lecture slides,
+                      notes).
+                    </p>
 
-                {books.length > 0 && (
-                  <div className="mt-4">
-                    <h4 className="mb-2 font-medium">Books:</h4>
-                    <ul className="ml-5 list-disc space-y-2">
-                      {books.map(({ text, link }, index) => (
-                        <li key={index}>
-                          <Links title="" text={text} link={link} />
-                        </li>
-                      ))}
-                    </ul>
+                    {books.length > 0 && (
+                      <div className="mt-4">
+                        <h4 className="mb-2 font-medium">Books:</h4>
+                        <ul className="ml-5 list-disc space-y-2">
+                          {books.map(({ text, link }, index) => (
+                            <li key={index}>
+                              <Links title="" text={text} link={link} />
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {platforms.length > 0 && (
+                      <div className="mt-4">
+                        <h4 className="mb-2 font-medium">Practice Platforms:</h4>
+                        <ul className="ml-5 list-disc space-y-2">
+                          {platforms.map(({ text, link }, index) => (
+                            <li key={index}>
+                              <Links title="" text={text} link={link} />
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
-                )}
-
-                {platforms.length > 0 && (
-                  <div className="mt-4">
-                    <h4 className="mb-2 font-medium">Practice Platforms:</h4>
-                    <ul className="ml-5 list-disc space-y-2">
-                      {platforms.map(({ text, link }, index) => (
-                        <li key={index}>
-                          <Links title="" text={text} link={link} />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
               </div>
-            </div>
+            )}
             <div>
               <h3 className="mb-3 flex items-center text-lg font-semibold md:text-xl">
                 <span className="mr-2 h-6 w-1 rounded bg-ucr-blue/70" />
