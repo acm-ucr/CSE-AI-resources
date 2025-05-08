@@ -1,7 +1,7 @@
 import { TimelineItemType } from "@/types";
 
 export const history: Record<string, TimelineItemType[]> = {
-"": [
+  "": [
     {
       title: "The Birth of AI",
       description: [

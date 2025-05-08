@@ -60,4 +60,4 @@ export type LabList = {
   header: string;
   description: string;
   links: linkableProps[];
-}
+};

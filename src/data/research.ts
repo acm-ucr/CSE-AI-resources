@@ -1,7 +1,7 @@
 import { LabList } from "@/types";
 
 export const LABS: Record<string, LabList[]> = {
-  "CSE Department":[
+  "CSE Department": [
     {
       header: "Foundational Machine Learning",
       description:
@@ -14,19 +14,19 @@ export const LABS: Record<string, LabList[]> = {
       ],
     },
     {
-        header: "Natural Language Processing",
-        description:
-          "Research centers on developing trustworthy, controllable, and safe natural language processing systems capable of understanding, reasoning, and generating human-like text. Key focus areas include reducing hallucination and improving factual accuracy, ensuring fairness across social groups, detecting AI-generated content for responsible use, and aligning models for safe and useful output.",
-        links: [
-          {
-            text: "UCR NLP & Text Mining Group",
-            link: "https://yuedong.us/lab/lablist/",
-          },
-          {
-            text: "PiLabs",
-            link: "https://sites.google.com/ucr.edu/paea-lependu",
-          },
-        ],
+      header: "Natural Language Processing",
+      description:
+        "Research centers on developing trustworthy, controllable, and safe natural language processing systems capable of understanding, reasoning, and generating human-like text. Key focus areas include reducing hallucination and improving factual accuracy, ensuring fairness across social groups, detecting AI-generated content for responsible use, and aligning models for safe and useful output.",
+      links: [
+        {
+          text: "UCR NLP & Text Mining Group",
+          link: "https://yuedong.us/lab/lablist/",
+        },
+        {
+          text: "PiLabs",
+          link: "https://sites.google.com/ucr.edu/paea-lependu",
+        },
+      ],
     },
     {
       header: "Data Mining & Graph Analytics",
@@ -38,9 +38,9 @@ export const LABS: Record<string, LabList[]> = {
           link: "https://www.cs.ucr.edu/~epapalex/group.html",
         },
         {
-            text: "UCR Database Lab",
-            link: "http://dblab.cs.ucr.edu/",
-          },
+          text: "UCR Database Lab",
+          link: "http://dblab.cs.ucr.edu/",
+        },
       ],
     },
     {
@@ -77,12 +77,12 @@ export const LABS: Record<string, LabList[]> = {
           link: "https://sites.google.com/view/arcs-lab",
         },
         {
-            text: "Trustworthy Autonomous Systems Laboratory",
-            link: "https://tasl.ucr.edu/",
+          text: "Trustworthy Autonomous Systems Laboratory",
+          link: "https://tasl.ucr.edu/",
         },
         {
-            text: "Collaborative Intelligence Systems Lab",
-            link: "https://cisl.ucr.edu/",
+          text: "Collaborative Intelligence Systems Lab",
+          link: "https://cisl.ucr.edu/",
         },
       ],
     },

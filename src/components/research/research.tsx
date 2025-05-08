@@ -12,16 +12,14 @@ const Research = () => {
           <p className="mt-10 bg-ucr-blue bg-opacity-45 p-2 text-4xl font-medium">
             {level}
           </p>
-          {LABS[level].map(
-            ({ header, description, links }, index: number) => (
-              <Labs
-                header={header}
-                description={description}
-                links={links}
-                key={index}
-              />
-            ),
-          )}
+          {LABS[level].map(({ header, description, links }, index: number) => (
+            <Labs
+              header={header}
+              description={description}
+              links={links}
+              key={index}
+            />
+          ))}
         </div>
       ))}
     </div>
