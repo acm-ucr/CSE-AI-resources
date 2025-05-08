@@ -1,6 +1,5 @@
 "use client";
 
-import AIDropdowns from "@/components/research/research";
 import Background from "@/components/background";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
