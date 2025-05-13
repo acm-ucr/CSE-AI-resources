@@ -1,9 +1,11 @@
 import Dropdown from "./course-dropdown";
 import { courses } from "@/data/courses";
+import Title from "../title";
 
 const CourseDropdowns = () => {
   return (
-    <div className="w-5/6">
+    <div className="my-8 w-5/6">
+      <Title title="UCR AI Courses" underline={false} />
       {Object.keys(courses).map((level) => (
         <div key={level}>
           <p className="mt-10 bg-ucr-blue bg-opacity-45 p-2 text-4xl font-medium">
