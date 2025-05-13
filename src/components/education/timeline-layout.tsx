@@ -11,10 +11,9 @@ import { timelineData } from "@/data/timeline";
 
 export const TimelineLayout = ({ data = timelineData }) => {
   return (
-    <div className="w-full max-w-3xl mx-auto py-8 px-4">
+    <div className="mx-auto w-full max-w-3xl px-4 py-8">
       <Timeline className="relative">
         {Object.entries(data).flatMap(([decade, items]) => [
-
           <Timeline
             key={decade}
             className="mt-2 flex h-full w-full flex-col items-center md:mt-8"
@@ -33,7 +32,7 @@ export const TimelineLayout = ({ data = timelineData }) => {
               </TimelineHeader>
               <TimelineDescription className="mt-2 text-gray-900">
                 {Array.isArray(item.description) ? (
-                  <ul className="list-inside list-disc ml-6 space-y-1">
+                  <ul className="ml-6 list-inside list-disc space-y-1">
                     {item.description.map((desc, i) => (
                       <li key={i} className="text-sm md:text-base">
                         {desc}
