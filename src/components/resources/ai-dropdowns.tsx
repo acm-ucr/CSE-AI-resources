@@ -9,6 +9,7 @@ import Image from "next/image";
 import TimelineLayout from "../education/timeline-layout";
 import { history } from "@/data/history";
 import Links from "@/components/resources/links";
+import Title from "../title";
 
 // Helper component to render text with bullet points parsed from newlines
 function FormattedText({ text }: { text: string }) {

@@ -11,7 +11,7 @@ import { timelineData } from "@/data/timeline";
 
 export const TimelineLayout = ({ data = timelineData }) => {
   return (
-    <div className="w-full max-w-3xl mx-auto py-8">
+    <div className="w-full max-w-3xl mx-auto py-8 px-4">
       <Timeline className="relative">
         {Object.entries(data).flatMap(([decade, items]) => [
 
