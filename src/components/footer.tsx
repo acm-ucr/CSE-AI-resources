@@ -45,7 +45,7 @@ const Footer = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors duration-300 hover:text-ucr-blue/80"
+                  className="transition-colors duration-300 hover:text-white/70"
                 >
                   {label}
                 </Link>
