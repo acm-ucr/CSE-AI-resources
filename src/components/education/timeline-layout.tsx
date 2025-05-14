@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Timeline,
   TimelineItem,
@@ -10,28 +11,30 @@ import { timelineData } from "@/data/timeline";
 
 export const TimelineLayout = ({ data = timelineData }) => {
   return (
-    <div className="flex h-full w-11/12 flex-wrap justify-between md:w-5/6">
-      {Object.entries(data).map(([level, items]) => (
-        <Timeline
-          key={level}
-          className="mt-2 flex h-full w-full flex-col items-center md:mt-8"
-        >
-          <div className="mb-4 w-fit border-b-4 border-ucr-yellow pb-1 text-center text-2xl font-semibold md:mb-10 md:text-4xl">
-            {level.charAt(0).toUpperCase() + level.slice(1)}
-          </div>
-          {items.map((item, index) => (
-            <TimelineItem key={index} className="h-fit">
+    <div className="mx-auto w-full max-w-3xl px-4 py-8">
+      <Timeline className="relative">
+        {Object.entries(data).flatMap(([decade, items]) => [
+          <Timeline
+            key={decade}
+            className="mt-2 flex h-full w-full flex-col items-center md:mt-8"
+          >
+            <div className="mb-4 w-fit border-b-4 border-ucr-yellow pb-1 text-center text-2xl font-semibold md:mb-10 md:text-4xl">
+              {decade.charAt(0).toUpperCase() + decade.slice(1)}
+            </div>
+          </Timeline>,
+          ...items.map((item, idx) => (
+            <TimelineItem key={`${decade}-${idx}`} className="mb-0">
               <TimelineHeader>
-                <TimelineTime className="rounded-md bg-ucr-blue/80 p-0 px-3 text-base font-medium normal-case shadow-sm duration-300 hover:bg-ucr-blue/70 md:p-3 md:text-lg">
+                <TimelineTime className="rounded-md bg-ucr-blue/80 px-3 py-1 text-base font-medium normal-case">
                   {item.time}
                 </TimelineTime>
-                <TimelineTitle>{item.title}</TimelineTitle>
+                <TimelineTitle className="ml-3">{item.title}</TimelineTitle>
               </TimelineHeader>
               <TimelineDescription className="mt-2 text-gray-900">
                 {Array.isArray(item.description) ? (
-                  <ul className="ml-2 mt-2 list-inside list-disc space-y-1">
-                    {item.description.map((desc, index) => (
-                      <li key={index} className="text-sm md:text-base">
+                  <ul className="ml-6 list-inside list-disc space-y-1">
+                    {item.description.map((desc, i) => (
+                      <li key={i} className="text-sm md:text-base">
                         {desc}
                       </li>
                     ))}
@@ -41,9 +44,9 @@ export const TimelineLayout = ({ data = timelineData }) => {
                 )}
               </TimelineDescription>
             </TimelineItem>
-          ))}
-        </Timeline>
-      ))}
+          )),
+        ])}
+      </Timeline>
     </div>
   );
 };

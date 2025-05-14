@@ -55,6 +55,17 @@ export const LABS: Record<string, LabList[]> = {
       ],
     },
     {
+      header: "Secruity and Privacy",
+      description:
+        "Exploring safe, real-time path-planning and collision-avoidance for single and multi-agent robotic systems, integrating motion-prediction, crowd simulation, and adaptive control for autonomous platforms.",
+      links: [
+        {
+          text: "SPA Lab",
+          link: "https://spalab.cs.ucr.edu",
+        },
+      ],
+    },
+    {
       header: "Robotics",
       description:
         "Exploring safe, real-time path-planning and collision-avoidance for single and multi-agent robotic systems, integrating motion-prediction, crowd simulation, and adaptive control for autonomous platforms.",

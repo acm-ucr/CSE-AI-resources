@@ -1,7 +1,7 @@
 import { Course } from "@/types";
 
 export const courses: Record<string, Course[]> = {
-  "Undergraduate Classes for AI": [
+  Undergraduate: [
     {
       header: "CS 042: A Hitchhiker's Guide to Artificial Intelligence	",
       description:
@@ -182,7 +182,7 @@ export const courses: Record<string, Course[]> = {
       ],
     },
   ],
-  "Graduate Classes for AI": [
+  Graduate: [
     {
       header: "CS 205: Artificial Intelligence",
       description:
