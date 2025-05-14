@@ -57,7 +57,7 @@ export const LABS: Record<string, LabList[]> = {
     {
       header: "Secruity and Privacy",
       description:
-        "Exploring safe, real-time path-planning and collision-avoidance for single and multi-agent robotic systems, integrating motion-prediction, crowd simulation, and adaptive control for autonomous platforms.",
+        "Advancing AI-driven approaches to cybersecurity, privacy-preserving computation, and safe autonomous systems, with applications in robotics, crowd modeling, and real-time decision-making.",
       links: [
         {
           text: "SPA Lab",
