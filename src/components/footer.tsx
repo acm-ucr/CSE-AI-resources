@@ -34,15 +34,23 @@ const Footer = () => (
         <h2 className="mb-4 text-2xl font-semibold uppercase text-ucr-yellow">
           University of California, Riverside
         </h2>
-        <address className="not-italic space-y-1 text-base leading-relaxed">
+        <address className="space-y-1 text-base not-italic leading-relaxed">
           <p>900 University Ave.</p>
           <p>Riverside, CA 92521</p>
           <p>Tel: (951) 827-4800</p>
         </address>
         <ul className="mt-6 space-y-2 text-sm leading-snug">
-          <li><strong>Maintained by:</strong> Professor Yue Dong</li>
-          <li><strong>Developed by:</strong> ACM@UCR President Jonathan Trujillo & Vice President Jerry Li</li>
-          <li><strong>Guidance from:</strong> Professor Christian Shelton (CSE Dept. Chair)</li>
+          <li>
+            <strong>Maintained by:</strong> Professor Yue Dong
+          </li>
+          <li>
+            <strong>Developed by:</strong> ACM@UCR President Jonathan Trujillo &
+            Vice President Jerry Li
+          </li>
+          <li>
+            <strong>Guidance from:</strong> Professor Christian Shelton (CSE
+            Dept. Chair)
+          </li>
           <li>
             <strong>Questions?:</strong>{" "}
             <Link
@@ -69,7 +77,10 @@ const Footer = () => (
             {label}
           </Link>
         ))}
-        <span>&copy; {new Date().getFullYear()} Regents of the University of California</span>
+        <span>
+          &copy; {new Date().getFullYear()} Regents of the University of
+          California
+        </span>
       </div>
     </div>
   </footer>
