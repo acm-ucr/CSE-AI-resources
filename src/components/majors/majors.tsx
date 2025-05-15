@@ -1,7 +1,7 @@
 import React from "react";
 import Major from "./major";
 import { MAJORS } from "@/data/majors";
-import Title from "./title";
+import Title from "../title";
 
 const Majors = () => {
   return (

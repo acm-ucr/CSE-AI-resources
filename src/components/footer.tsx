@@ -5,16 +5,14 @@ import logo from "@/public/UCRLogo.svg";
 import { LINKS, FOOTER_LINKS } from "@/data/footer";
 
 const Footer = () => (
-  <footer className="w-full bg-ucr-blue text-white">
-    {/* top half */}
+  <div className="w-full bg-ucr-blue text-white">
     <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-12 md:grid-cols-2">
-      {/* left: logo + nav */}
       <div className="flex flex-col space-y-6">
         <div className="w-32">
           <Image src={logo} alt="UCR Logo" />
         </div>
         <hr className="border-white/50" />
-        <nav className="flex flex-col space-y-3">
+        <div className="flex flex-col space-y-3">
           {LINKS.map(({ href, label }) => (
             <Link
               key={href}
@@ -26,41 +24,39 @@ const Footer = () => (
               {label}
             </Link>
           ))}
-        </nav>
+        </div>
       </div>
-
-      {/* right: address + credits */}
-      <div className="flex flex-col">
-        <h2 className="mb-4 text-2xl font-semibold uppercase text-ucr-yellow">
+      <div className="flex flex-col justify-center">
+        <div className="mb-4 text-2xl font-semibold uppercase text-ucr-yellow">
           University of California, Riverside
-        </h2>
-        <address className="space-y-1 text-base not-italic leading-relaxed">
+        </div>
+        <div className="space-y-1 text-base not-italic leading-relaxed">
           <p>900 University Ave.</p>
           <p>Riverside, CA 92521</p>
           <p>Tel: (951) 827-4800</p>
-        </address>
-        <ul className="mt-6 space-y-2 text-sm leading-snug">
-          <li>
+        </div>
+        <div className="mt-6 space-y-2 text-sm leading-snug">
+          <p>
             <strong>Maintained by:</strong> Professor Yue Dong
-          </li>
-          <li>
-            <strong>Developed by:</strong> ACM@UCR President Jonathan Trujillo &
-            Vice President Jerry Li
-          </li>
-          <li>
+          </p>
+          <p>
+            <strong>Developed by:</strong> ACM@UCR - Jonathan Trujillo
+            (President) & Jerry Li (Vice President)
+          </p>
+          <p>
             <strong>Guidance from:</strong> Professor Christian Shelton (CSE
             Dept. Chair)
-          </li>
-          <li>
+          </p>
+          <p>
             <strong>Questions?:</strong>{" "}
             <Link
               href="mailto:yue.dong@ucr.edu"
-              className="underline hover:text-ucr-yellow"
+              className="underline duration-300 hover:text-ucr-yellow"
             >
               yue.dong@ucr.edu
             </Link>
-          </li>
-        </ul>
+          </p>
+        </div>
       </div>
     </div>
 
@@ -83,7 +79,7 @@ const Footer = () => (
         </span>
       </div>
     </div>
-  </footer>
+  </div>
 );
 
 export default Footer;

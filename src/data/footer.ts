@@ -11,11 +11,11 @@ export const LINKS = [
 export const FOOTER_LINKS = [
   {
     href: "https://www.ucr.edu/privacy.html",
-    label: "Privacy and Accessibility",
+    label: "Privacy And Accessibility",
   },
   {
     href: "https://ucrsupport.service-now.com/ucr_portal?id=ucr_accessibility_form",
-    label: "Report barrier to accessibility",
+    label: "Report Barrier To Accessibility",
   },
-  { href: "https://www.ucr.edu/terms.html", label: "Terms and Conditions" },
+  { href: "https://www.ucr.edu/terms.html", label: "Terms And Conditions" },
 ];
