@@ -19,7 +19,7 @@ export const LABS: Record<string, LabList[]> = {
         "Research centers on developing trustworthy, controllable, and safe natural language processing systems capable of understanding, reasoning, and generating human-like text. Key focus areas include reducing hallucination and improving factual accuracy, ensuring fairness across social groups, detecting AI-generated content for responsible use, and aligning models for safe and useful output.",
       links: [
         {
-          text: "UCR NLP & Text Mining Group",
+          text: "UCR NLP Lab",
           link: "https://yuedong.us/lab/lablist/",
         },
         {
