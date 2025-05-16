@@ -6,15 +6,12 @@ import { LINKS, FOOTER_LINKS } from "@/data/footer";
 
 const Footer = () => (
   <footer className="w-full bg-ucr-blue text-white">
-    {/* top half */}
     <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-12 md:grid-cols-2">
-      {/* left: logo + nav */}
+      {/* Left Section */}
       <div className="flex flex-col space-y-6">
-        <div className="w-32">
-          <Image src={logo} alt="UCR Logo" />
-        </div>
+        <Image src={logo} alt="UCR Logo" className="w-32" />
         <hr className="border-white/50" />
-        <nav className="flex flex-col space-y-3">
+        <div className="flex flex-col space-y-3">
           {LINKS.map(({ href, label }) => (
             <Link
               key={href}
@@ -26,46 +23,47 @@ const Footer = () => (
               {label}
             </Link>
           ))}
-        </nav>
+        </div>
       </div>
 
-      {/* right: address + credits */}
-      <div className="flex flex-col">
-        <h2 className="mb-4 text-2xl font-semibold uppercase text-ucr-yellow">
+      {/* Right Section */}
+      <div className="flex flex-col justify-center space-y-4">
+        <div className="text-2xl font-semibold uppercase text-ucr-yellow">
           University of California, Riverside
-        </h2>
+        </div>
         <address className="space-y-1 text-base not-italic leading-relaxed">
           <p>900 University Ave.</p>
           <p>Riverside, CA 92521</p>
           <p>Tel: (951) 827-4800</p>
         </address>
-        <ul className="mt-6 space-y-2 text-sm leading-snug">
-          <li>
-            <strong>Maintained by:</strong> Professor Yue Dong
-          </li>
-          <li>
-            <strong>Developed by:</strong> ACM@UCR President Jonathan Trujillo &
-            Vice President Jerry Li
-          </li>
-          <li>
-            <strong>Guidance from:</strong> Professor Christian Shelton (CSE
-            Dept. Chair)
-          </li>
-          <li>
-            <strong>Questions?:</strong>{" "}
+        <div className="mt-4 space-y-1 text-sm leading-snug">
+          <p className="font-bold">Website Development Team</p>
+          <p>
+            <span className="font-semibold">Direction:</span> Yue Dong (CSE
+            faculty; questions or updates:{" "}
             <Link
               href="mailto:yue.dong@ucr.edu"
-              className="underline hover:text-ucr-yellow"
+              className="underline transition-colors duration-300 hover:text-ucr-yellow"
             >
               yue.dong@ucr.edu
             </Link>
-          </li>
-        </ul>
+            )
+          </p>
+          <p>
+            <span className="font-semibold">Development:</span> Jonathan
+            Trujillo (ACM@UCR President), Jerry Li (ACM@UCR Vice President)
+          </p>
+          <p>
+            <span className="font-semibold">Advising:</span> Christian Shelton
+            (CSE Department Chair)
+          </p>
+        </div>
       </div>
     </div>
 
+    {/* Bottom Bar */}
     <div className="bg-ucr-yellow text-ucr-blue">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-6 px-6 py-4 text-sm">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-2 px-6 py-4 text-sm md:gap-6">
         {FOOTER_LINKS.map(({ href, label }) => (
           <Link
             key={href}

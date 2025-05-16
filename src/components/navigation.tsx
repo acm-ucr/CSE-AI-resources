@@ -39,7 +39,7 @@ const Navigation = () => {
         <div className="flex w-full items-center justify-between px-4 md:px-6">
           <div className="text-base font-semibold md:text-2xl">AI Hub</div>
 
-          <div className="hidden items-center space-x-7 text-xl md:flex lg:text-2xl">
+          <div className="hidden items-center space-x-4 text-xl md:flex lg:text-xl">
             {ITEMS.map((item, index) => (
               <Link
                 href={item.href}

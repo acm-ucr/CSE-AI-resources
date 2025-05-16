@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Links from "./resources/links";
+import Links from "../resources/links";
 
 type props = {
   header: string;
